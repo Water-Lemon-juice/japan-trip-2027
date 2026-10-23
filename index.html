@@ -1,0 +1,2678 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2027 家族冬日日本之旅｜沖繩 vs 九州・給媽媽的溫馨行程與全預算指南</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --bg-warm: #FAF6F0;
+      --bg-card: #FFFFFF;
+      --border-warm: #E6DFD5;
+      --text-main: #2C2523;
+      --text-muted: #6E655F;
+    }
+    html {
+      font-size: 17px;
+      scroll-behavior: smooth;
+    }
+    html.large-font {
+      font-size: 20px;
+    }
+    body {
+      background-color: var(--bg-warm);
+      color: var(--text-main);
+      font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+    }
+    .warm-card {
+      background: #FFFFFF;
+      border: 1px solid #EAE3D9;
+      box-shadow: 0 10px 28px -8px rgba(100, 80, 60, 0.07);
+      border-radius: 1.25rem;
+    }
+    .nav-pill-active-compare {
+      background: linear-gradient(135deg, #2D6A4F 0%, #40916C 100%);
+      color: #FFFFFF !important;
+      border-color: transparent !important;
+      box-shadow: 0 8px 20px -4px rgba(45, 106, 79, 0.38);
+    }
+    .nav-pill-active-okinawa {
+      background: linear-gradient(135deg, #0077B6 0%, #0096C7 100%);
+      color: #FFFFFF !important;
+      border-color: transparent !important;
+      box-shadow: 0 8px 20px -4px rgba(0, 119, 182, 0.38);
+    }
+    .nav-pill-active-kyushu {
+      background: linear-gradient(135deg, #B5482A 0%, #D96B43 100%);
+      color: #FFFFFF !important;
+      border-color: transparent !important;
+      box-shadow: 0 8px 20px -4px rgba(181, 72, 42, 0.38);
+    }
+    .day-pill-active-okinawa {
+      background: #0077B6 !important;
+      color: #FFFFFF !important;
+      border-color: #0077B6 !important;
+      box-shadow: 0 6px 14px -3px rgba(0, 119, 182, 0.35);
+      transform: translateY(-2px);
+    }
+    .day-pill-active-kyushu {
+      background: #C85A32 !important;
+      color: #FFFFFF !important;
+      border-color: #C85A32 !important;
+      box-shadow: 0 6px 14px -3px rgba(200, 90, 50, 0.35);
+      transform: translateY(-2px);
+    }
+    .btn-lift {
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-lift:hover {
+      transform: translateY(-2px);
+    }
+    .timeline-line {
+      background: repeating-linear-gradient(to bottom, #D6CFC5 0, #D6CFC5 6px, transparent 6px, transparent 12px);
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-24 selection:bg-amber-200">
+
+  <!-- 頂部溫馨導覽列 (Sticky) -->
+  <header class="sticky top-0 z-40 bg-[#FAF6F0]/95 backdrop-blur-md border-b border-[#E5DEC9] shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3.5">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white text-2xl shadow-sm">
+          🌸
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-extrabold text-lg sm:text-xl text-[#2C2523] tracking-tight">2027 家族日本冬日之旅・媽媽專屬參考手冊</h1>
+          </div>
+          <p class="text-xs sm:text-sm text-[#6E655F]">
+            👨‍👩‍👦‍👦 家族成員：媽媽 TSAI HUI MEI・爸爸 CHANG SHUO HSUN・CHANG PO CHUN・弟弟 CHANG PO HSIANG
+          </p>
+        </div>
+      </div>
+
+      <!-- 貼心工具按鈕 -->
+      <div class="flex flex-wrap items-center gap-2.5">
+        <button onclick="openAllRemindersModal()" class="btn-lift inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-[#FFF3CD] hover:bg-[#FFE69C] text-[#664D03] border border-[#FFECB5] font-bold text-sm shadow-sm cursor-pointer">
+          <span>🔔</span>
+          <span>行前重點提醒總覽</span>
+        </button>
+        <button id="fontToggleBtn" onclick="toggleFontSize()" class="btn-lift inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-[#2C2523] hover:bg-[#433936] text-white font-bold text-sm shadow-sm cursor-pointer">
+          <span>👓</span>
+          <span id="fontToggleText">放大字體 (更舒適)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 三大主題切換按鈕 -->
+    <div class="bg-[#F3EDE2]/90 border-t border-[#E5DEC9] px-4 sm:px-6 py-3">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <button id="tabBtn-compare" onclick="switchMainTab('compare')" class="nav-pill-active-compare btn-lift flex items-center justify-center gap-2.5 py-3.5 px-5 rounded-2xl font-extrabold text-base bg-white text-[#3D3531] border border-[#DED6C8] cursor-pointer">
+          <span class="text-xl">💰</span>
+          <span>全預算比較 (機+酒+租車+門票)</span>
+        </button>
+        <button id="tabBtn-okinawa" onclick="switchMainTab('okinawa')" class="btn-lift flex items-center justify-center gap-2.5 py-3.5 px-5 rounded-2xl font-extrabold text-base bg-white text-[#3D3531] border border-[#DED6C8] hover:border-sky-400 cursor-pointer">
+          <span class="text-xl">🌺</span>
+          <span>方案一：沖繩冬日游 (8日)</span>
+        </button>
+        <button id="tabBtn-kyushu" onclick="switchMainTab('kyushu')" class="btn-lift flex items-center justify-center gap-2.5 py-3.5 px-5 rounded-2xl font-extrabold text-base bg-white text-[#3D3531] border border-[#DED6C8] hover:border-orange-400 cursor-pointer">
+          <span class="text-xl">♨️</span>
+          <span>方案二：九州溫泉之旅 (7日)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pt-7 space-y-8">
+
+    <!-- 媽媽友善歡迎橫幅＆去趣原始連結按鈕 -->
+    <section class="warm-card p-6 bg-gradient-to-r from-[#FFFDF9] via-[#FFF9F0] to-[#F7FAFC] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
+      <div class="space-y-2">
+        <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-amber-100/80 text-amber-900 text-xs font-bold border border-amber-200">
+          <span>💌 給媽媽的話</span>
+          <span>•</span>
+          <span>旅客：TSAI HUI MEI (媽)、CHANG SHUO HSUN (爸)、CHANG PO CHUN、CHANG PO HSIANG (弟)</span>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-extrabold text-[#2C2523]">
+          媽～兩個方案都幫您重新排好，而且全程都租最舒適的「TOYOTA ALPHARD 阿爾法七人座」囉！
+        </h2>
+        <p class="text-sm sm:text-base text-[#5C534E]">
+          下方已幫您把<strong>「長榮直飛機票 ＋ 每晚飯店 ＋ ALPHARD 租車含保險 ＋ 所有景點門票預估」</strong>全部算好，每個景點也都有 Google 地圖、官方網站與提醒按鈕！
+        </p>
+      </div>
+      <div class="flex flex-wrap sm:flex-nowrap gap-3 w-full lg:w-auto shrink-0">
+        <a href="https://chictrip-share.app.link/ChuQmK26n7b" target="_blank" rel="noopener noreferrer" class="btn-lift flex-1 lg:flex-initial inline-flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-[#0077B6] hover:bg-[#023E8A] text-white font-bold text-sm shadow-sm">
+          <span>📲</span>
+          <span>去趣 App：沖繩行程</span>
+        </a>
+        <a href="https://chictrip-share.app.link/MUydUdZwo7b" target="_blank" rel="noopener noreferrer" class="btn-lift flex-1 lg:flex-initial inline-flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-[#C85A32] hover:bg-[#9E3E1C] text-white font-bold text-sm shadow-sm">
+          <span>📲</span>
+          <span>去趣 App：九州行程</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 分頁 1：金額比較 (機+酒+租車+門票) ＆ 總覽 -->
+    <!-- ========================================== -->
+    <div id="view-compare" class="space-y-8">
+
+      <!-- 1. 一目了然：兩方案最終全預算大卡 -->
+      <section class="warm-card p-6 sm:p-8 space-y-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#EAE3D9] pb-5">
+          <div>
+            <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">✓ 機票 ＋ 飯店 ＋ ALPHARD 租車 ＋ 景點門票預估 完整精算</span>
+            <h3 class="text-2xl font-extrabold text-[#2C2523] mt-2">💰 沖繩 vs 九州・四大花費總金額比較</h3>
+            <p class="text-sm text-[#6E655F] mt-0.5">兩個方案皆搭乘「長榮航空直飛班機」、全程租用「TOYOTA ALPHARD 頂級休旅車」（日圓匯率以 0.215 折算台幣）。</p>
+          </div>
+          <!-- 切換 4人總計 / 每人平均 -->
+          <div class="inline-flex rounded-2xl bg-[#F3EDE2] p-1.5 border border-[#E2D9C8] self-start">
+            <button id="priceMode-total" onclick="setPriceDisplayMode('total')" class="px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-[#2C2523] text-white shadow-sm transition cursor-pointer">
+              👨‍👩‍👦‍👦 看 4 人總金額
+            </button>
+            <button id="priceMode-person" onclick="setPriceDisplayMode('person')" class="px-4 py-2 rounded-xl font-bold text-xs sm:text-sm text-[#5C534E] hover:text-[#2C2523] transition cursor-pointer">
+              👤 看每人平均金額
+            </button>
+          </div>
+        </div>
+
+        <!-- 三欄式高質感比價卡 -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <!-- 沖繩金額卡 -->
+          <div class="rounded-2xl bg-gradient-to-br from-[#F0F9FF] to-[#E0F2FE] border-2 border-[#BAE6FD] p-6 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="font-extrabold text-[#0369A1] text-lg flex items-center gap-1.5">🌺 沖繩冬日游 (8天7夜)</span>
+                <span class="text-xs px-2.5 py-1 rounded-full bg-white text-[#0369A1] font-bold border border-sky-200" id="okinawaBadgeMode">4位大人總計</span>
+              </div>
+              <div class="text-3xl sm:text-4xl font-black text-[#0284C7] tracking-tight" id="okinawaMainPrice">NT$ 157,532</div>
+              <div class="text-sm font-bold text-[#0369A1]" id="okinawaSubPrice">👤 每人平均：NT$ 39,383 / 人</div>
+            </div>
+            <div class="bg-white/90 rounded-xl p-4 space-y-2 text-sm border border-sky-100">
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">✈️ 長榮直飛沖繩機票</span>
+                <strong class="text-[#2C2523]" id="okinawaBreakdownFlight">NT$ 79,552</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🏨 7 晚確認飯店住宿</span>
+                <strong class="text-[#2C2523]" id="okinawaBreakdownHotel">NT$ 43,329</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🚐 ALPHARD 租車 (¥91,000)</span>
+                <strong class="text-[#0369A1]" id="okinawaBreakdownCar">NT$ 19,565</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🎫 9 大景點門票預估</span>
+                <strong class="text-[#0369A1]" id="okinawaBreakdownTicket">NT$ 15,086</strong>
+              </div>
+              <div class="w-full bg-sky-100 h-2.5 rounded-full overflow-hidden flex mt-1">
+                <div class="bg-[#0284C7] h-full" style="width: 50%" title="機票 50%"></div>
+                <div class="bg-[#38BDF8] h-full" style="width: 28%" title="住宿 28%"></div>
+                <div class="bg-[#0D9488] h-full" style="width: 12%" title="租車 12%"></div>
+                <div class="bg-[#F59E0B] h-full" style="width: 10%" title="門票 10%"></div>
+              </div>
+              <div class="text-xs text-[#6E655F] pt-1">
+                ✓ 第1晚改住國際通「那霸蒙特利拉蘇瑞飯店」＋BGA阿爾法租車含全險與ETC吃到飽
+              </div>
+            </div>
+          </div>
+
+          <!-- 九州金額卡 -->
+          <div class="rounded-2xl bg-gradient-to-br from-[#FFF7ED] to-[#FFEDD5] border-2 border-[#FED7AA] p-6 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="font-extrabold text-[#9A3412] text-lg flex items-center gap-1.5">♨️ 九州溫泉之旅 (7天6夜)</span>
+                <span class="text-xs px-2.5 py-1 rounded-full bg-white text-[#9A3412] font-bold border border-orange-200" id="kyushuBadgeMode">4位大人總計</span>
+              </div>
+              <div class="text-3xl sm:text-4xl font-black text-[#C2410C] tracking-tight" id="kyushuMainPrice">NT$ 203,549</div>
+              <div class="text-sm font-bold text-[#9A3412]" id="kyushuSubPrice">👤 每人平均：NT$ 50,887 / 人</div>
+            </div>
+            <div class="bg-white/90 rounded-xl p-4 space-y-2 text-sm border border-orange-100">
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">✈️ 長榮直飛福岡機票</span>
+                <strong class="text-[#2C2523]" id="kyushuBreakdownFlight">NT$ 100,084</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🏨 6 晚確認飯店住宿</span>
+                <strong class="text-[#2C2523]" id="kyushuBreakdownHotel">NT$ 48,111</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🚐 新款 ALPHARD 雪胎車 (¥196,614)</span>
+                <strong class="text-[#9A3412]" id="kyushuBreakdownCar">NT$ 42,272</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🎫 10 大景點門票＆採草莓預估</span>
+                <strong class="text-[#9A3412]" id="kyushuBreakdownTicket">NT$ 13,082</strong>
+              </div>
+              <div class="w-full bg-orange-100 h-2.5 rounded-full overflow-hidden flex mt-1">
+                <div class="bg-[#C2410C] h-full" style="width: 49%" title="機票 49%"></div>
+                <div class="bg-[#FB923C] h-full" style="width: 24%" title="住宿 24%"></div>
+                <div class="bg-[#D97706] h-full" style="width: 21%" title="租車 21%"></div>
+                <div class="bg-[#10B981] h-full" style="width: 6%" title="門票 6%"></div>
+              </div>
+              <div class="text-xs text-[#6E655F] pt-1">
+                ✓ 含竹之倉山莊36㎡附樓一泊二食＋星野集團OMO5熊本＋指定新款阿爾法雪胎車
+              </div>
+            </div>
+          </div>
+
+          <!-- 差額與價值分析卡 -->
+          <div class="rounded-2xl bg-gradient-to-br from-[#F2F9F6] to-[#E6F4EE] border-2 border-[#B7E4C7] p-6 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="font-extrabold text-[#1B4332] text-lg">⚖️ 兩方案總差額分析</span>
+                <span class="text-xs px-2.5 py-1 rounded-full bg-white text-[#1B4332] font-bold border border-emerald-200">四大項合計</span>
+              </div>
+              <div class="text-2xl sm:text-3xl font-black text-[#2D6A4F]" id="diffMainText">沖繩省 NT$ 46,017</div>
+              <div class="text-sm font-bold text-[#1B4332]" id="diffSubText">👤 平均每人省下：NT$ 11,504 / 人</div>
+            </div>
+            <div class="bg-white/90 rounded-xl p-4 space-y-1.5 text-sm border border-emerald-100">
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">✈️ 機票差額</span>
+                <strong class="text-[#2D6A4F]">沖繩省 NT$ 20,532</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🏨 住宿差額</span>
+                <strong class="text-[#2D6A4F]">沖繩省 NT$ 4,782</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🚐 ALPHARD 租車差額</span>
+                <strong class="text-[#2D6A4F]">沖繩省 NT$ 22,707</strong>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-[#5C534E]">🎫 門票預估差額</span>
+                <strong class="text-[#9A3412]">九州省 NT$ 2,004</strong>
+              </div>
+              <div class="text-xs text-[#5C534E] pt-1.5 border-t border-emerald-100 leading-relaxed">
+                💡 兩地都幫媽媽訂了頭等艙等級座椅的 <strong>TOYOTA ALPHARD</strong>，坐長途車也像坐高鐵商務艙一樣舒服！
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 機票・ALPHARD租車・每晚住宿 逐筆訂單對照表 -->
+        <div class="pt-4">
+          <h4 class="font-extrabold text-lg text-[#2C2523] mb-3 flex items-center gap-2">
+            <span>📋</span>
+            <span>第一部分：機票、TOYOTA ALPHARD 租車與每晚飯店訂單明細表</span>
+          </h4>
+          <div class="overflow-x-auto rounded-2xl border border-[#E5DEC9]">
+            <table class="w-full text-left border-collapse text-sm sm:text-base">
+              <thead>
+                <tr class="bg-[#2C2523] text-white">
+                  <th class="p-3.5 font-bold">項目 / 日期</th>
+                  <th class="p-3.5 bg-[#005F92] font-bold">🌺 沖繩冬日游 (8天7夜 PDF 明細)</th>
+                  <th class="p-3.5 bg-[#004A73] text-right font-bold">沖繩金額</th>
+                  <th class="p-3.5 bg-[#9E3E1C] font-bold">♨️ 九州溫泉之旅 (7天6夜 PDF 明細)</th>
+                  <th class="p-3.5 bg-[#7D2E12] text-right font-bold">九州金額</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[#EAE3D9] bg-white">
+                <!-- 機票 -->
+                <tr class="bg-[#FCF9F4]">
+                  <td class="p-4 font-extrabold text-[#2C2523] whitespace-nowrap">
+                    ✈️ 長榮直飛機票<br/>
+                    <span class="text-xs font-normal text-[#6E655F]">4位大人來回</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-extrabold text-[#005F92]">台北 (TPE) ⇄ 沖繩 (OKA) 直飛</div>
+                    <div class="text-xs sm:text-sm text-[#5C534E] mt-0.5">
+                      • 去程：1/21 (四) <strong>16:30 → 19:10</strong><br/>
+                      • 回程：1/28 (四) <strong>20:10 → 20:55</strong>
+                    </div>
+                    <div class="text-xs text-emerald-700 font-bold mt-1">✓ 每人含手提 7kg + 託運 2×23kg（NT$19,888×4人）</div>
+                  </td>
+                  <td class="p-4 text-right font-extrabold text-[#005F92] whitespace-nowrap">
+                    NT$ 79,552<br/>
+                    <span class="text-xs font-normal text-[#6E655F]">(每人 19,888)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-extrabold text-[#9E3E1C]">台北 (TPE) ⇄ 福岡 (FUK) 直飛</div>
+                    <div class="text-xs sm:text-sm text-[#5C534E] mt-0.5">
+                      • 去程：1/21 (四) <strong>16:25 → 19:55</strong><br/>
+                      • 回程：<strong>12:15 → 13:50</strong> <span class="text-amber-700 font-bold">(去趣排 1/27 返程，機票單為 1/28)</span>
+                    </div>
+                    <div class="text-xs text-emerald-700 font-bold mt-1">✓ 每人含手提 7kg + 託運 2×23kg（NT$25,021×4人）</div>
+                  </td>
+                  <td class="p-4 text-right font-extrabold text-[#9E3E1C] whitespace-nowrap">
+                    NT$ 100,084<br/>
+                    <span class="text-xs font-normal text-[#6E655F]">(每人 25,021)</span>
+                  </td>
+                </tr>
+
+                <!-- 租車 -->
+                <tr class="bg-[#F5F9FC]">
+                  <td class="p-4 font-extrabold text-[#2C2523] whitespace-nowrap">
+                    🚐 ALPHARD 租車<br/>
+                    <span class="text-xs font-normal text-[#6E655F]">1/22 ～ 1/27 (6日)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-extrabold text-[#005F92]">BGA RENTAL CAR・TOYOTA ALPHARD 阿爾法</div>
+                    <div class="text-xs sm:text-sm text-[#5C534E] mt-0.5">
+                      • 取還：1/22 09:00 泉崎本店取車 ～ 1/27 19:00 還車<br/>
+                      • 包含：<strong>ETC 無限暢行方案 ＋ ★Premium NOC 頂級免責保險★</strong>
+                    </div>
+                    <div class="text-xs text-emerald-700 font-bold mt-1">✓ 訂單總額 JPY 91,000（以 0.215 折算）</div>
+                  </td>
+                  <td class="p-4 text-right font-extrabold text-[#005F92] whitespace-nowrap">
+                    NT$ 19,565<br/>
+                    <span class="text-xs font-normal text-[#6E655F]">(¥91,000)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-extrabold text-[#9E3E1C]">WBSZ【New model】新款 ALPHARD 指定雪胎車</div>
+                    <div class="text-xs sm:text-sm text-[#5C534E] mt-0.5">
+                      • 取還：1/22 08:00 博多站取車 ～ 1/26 19:28 (訂單至 1/27 20:00)<br/>
+                      • 包含：<strong>雪胎標準裝備 ＋ ETC卡(330円) ＋ 安心保險套餐(28,380円)</strong>
+                    </div>
+                    <div class="text-xs text-emerald-700 font-bold mt-1">✓ 訂單總額 JPY 196,614 含稅（店鋪刷卡，以 0.215 折算）</div>
+                  </td>
+                  <td class="p-4 text-right font-extrabold text-[#9E3E1C] whitespace-nowrap">
+                    NT$ 42,272<br/>
+                    <span class="text-xs font-normal text-[#6E655F]">(¥196,614)</span>
+                  </td>
+                </tr>
+
+                <!-- Day 1 -->
+                <tr class="hover:bg-[#FAF6F0]/60">
+                  <td class="p-4 font-bold text-[#2C2523] whitespace-nowrap">
+                    第 1 晚<br/><span class="text-xs font-normal text-[#6E655F]">01/21 (四)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#005F92]">✨ 那霸蒙特利拉蘇瑞飯店 (Hotel Monterey La Soeur Naha)</div>
+                    <div class="text-xs text-[#6E655F]">標準雙床房・2間 (19㎡，松尾1-1-2)｜無餐點｜單號 1616334496154025 (PIN: 1019)</div>
+                    <div class="text-xs text-emerald-700">✓ 1/17 23:59 前免費取消（走路 6 分鐘直達隔日租車行！）</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 5,828</td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#2C2523]">格蘭德博多WBF飯店</div>
+                    <div class="text-xs text-[#6E655F]">標準雙床房・2間 (18㎡)｜無餐點｜單號 1616334407287672 (PIN: 5432)</div>
+                    <div class="text-xs text-emerald-700">✓ 1/17 前免費取消（附大浴場澡堂）</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 4,934</td>
+                </tr>
+
+                <!-- Day 2 -->
+                <tr class="hover:bg-[#FAF6F0]/60">
+                  <td class="p-4 font-bold text-[#2C2523] whitespace-nowrap">
+                    第 2 晚<br/><span class="text-xs font-normal text-[#6E655F]">01/22 (五)</span>
+                  </td>
+                  <td class="p-4 bg-[#F0F9FF]/60" rowspan="3">
+                    <div class="inline-block px-2 py-0.5 rounded bg-sky-600 text-white text-xs font-bold mb-1">✨ 連住 3 晚免搬行李</div>
+                    <div class="font-extrabold text-[#005F92] text-base">名護 Ao～碧～ホテル (官網直接預訂)</div>
+                    <div class="text-xs text-[#5C534E] mt-1">
+                      • 1/22 ～ 1/25 共 3 晚（2 間雙人房，住 4 位成人）<br/>
+                      • 房型 A (23.55㎡雙床)：NT$ 6,642.25<br/>
+                      • 房型 B (雙人房)：NT$ 6,088.73
+                    </div>
+                    <div class="text-xs text-emerald-700 mt-1">✓ 含稅總計 NT$ 12,730.97</div>
+                  </td>
+                  <td class="p-4 text-right font-extrabold text-[#005F92] bg-[#F0F9FF]/60 whitespace-nowrap" rowspan="3">
+                    NT$ 12,731<br/>
+                    <span class="text-xs font-normal text-[#6E655F]">(3晚總計)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#2C2523]">可可莉別府飯店 (Cocolie 別府)</div>
+                    <div class="text-xs text-[#6E655F]">高級a型房(3張雙人床)・1間 (40㎡大空間)｜無餐點｜單號 1616334495924499 (PIN: 3966)</div>
+                    <div class="text-xs text-emerald-700">✓ 1/19 23:59 前免費取消</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 4,163</td>
+                </tr>
+
+                <!-- Day 3 -->
+                <tr class="hover:bg-[#FAF6F0]/60">
+                  <td class="p-4 font-bold text-[#2C2523] whitespace-nowrap">
+                    第 3 晚<br/><span class="text-xs font-normal text-[#6E655F]">01/23 (六)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#9E3E1C]">✨ 南阿蘇 白水溫泉 竹之倉山莊 (Takenokurasanso)</div>
+                    <div class="text-xs text-[#6E655F]">附樓雙床房-帶浴室・2間 (36㎡升級大房型)｜單號 1616334495941283 (PIN: 7718)</div>
+                    <div class="text-xs text-rose-700 font-bold">🍱 含一泊二食：1/23 晚餐4客 ＋ 1/24 早餐4客｜15:00-20:00 入住</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 22,266</td>
+                </tr>
+
+                <!-- Day 4 -->
+                <tr class="hover:bg-[#FAF6F0]/60">
+                  <td class="p-4 font-bold text-[#2C2523] whitespace-nowrap">
+                    第 4 晚<br/><span class="text-xs font-normal text-[#6E655F]">01/24 (日)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#9E3E1C]">✨ OMO5 熊本 by 星野集團 (Hoshino Resorts)</div>
+                    <div class="text-xs text-[#6E655F]">UTSUWA 雙床房・2間 (21-24㎡，下通商圈核心)｜無餐點｜單號 1616334495984350 (PIN: 6053)</div>
+                    <div class="text-xs text-emerald-700">✓ 星野集團人氣設計飯店，樓下就是上下通商店街！</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 4,964</td>
+                </tr>
+
+                <!-- Day 5 -->
+                <tr class="hover:bg-[#FAF6F0]/60">
+                  <td class="p-4 font-bold text-[#2C2523] whitespace-nowrap">
+                    第 5 晚<br/><span class="text-xs font-normal text-[#6E655F]">01/25 (一)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#2C2523]">新常態公寓式飯店 縣廳南口</div>
+                    <div class="text-xs text-[#6E655F]">豪華套房・1間 (27㎡/4人)｜無餐點｜單號 1616334446342475 (PIN: 7771)</div>
+                    <div class="text-xs text-emerald-700">✓ 1/22 前免費取消</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 3,563</td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#9E3E1C]">✨ YADO/Re 藥院 (福岡市中央區)</div>
+                    <div class="text-xs text-[#6E655F]">豪華雙床房(2張雙人床)・1間 (40㎡高樓層8-10F)｜無餐點｜單號 1616334495889872 (PIN: 4464)</div>
+                    <div class="text-xs text-emerald-700">✓ 40 平方公尺寬敞家庭公寓飯店</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 7,545</td>
+                </tr>
+
+                <!-- Day 6 -->
+                <tr class="hover:bg-[#FAF6F0]/60">
+                  <td class="p-4 font-bold text-[#2C2523] whitespace-nowrap">
+                    第 6 晚<br/><span class="text-xs font-normal text-[#6E655F]">01/26 (二)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#2C2523]">琉球溫泉 瀨長島飯店</div>
+                    <div class="text-xs text-[#6E655F]">豪華和洋式房・機場景觀帶露天浴缸・1間｜單號 1616334407661322 (PIN: 7682)</div>
+                    <div class="text-xs text-rose-700 font-bold">🍳 含 1/27 早餐 (共 4 客)＋龍神之湯大浴場</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 12,103</td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#2C2523]">格蘭德貝斯博多南 (GRAND BASE 佰舍博多南)</div>
+                    <div class="text-xs text-[#6E655F]">豪華轉角三人帶浴室城景(3張雙人床)・1間 (34㎡)｜單號 1616334496055164 (PIN: 1107)</div>
+                    <div class="text-xs text-emerald-700">✓ 已線上付款 TWD 4,239（1/23 22:00前免費取消）</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 4,239</td>
+                </tr>
+
+                <!-- Day 7 -->
+                <tr class="hover:bg-[#FAF6F0]/60">
+                  <td class="p-4 font-bold text-[#2C2523] whitespace-nowrap">
+                    第 7 晚<br/><span class="text-xs font-normal text-[#6E655F]">01/27 (三)</span>
+                  </td>
+                  <td class="p-4">
+                    <div class="font-bold text-[#2C2523]">JR九州Blossom飯店那霸 (櫻花酒店)</div>
+                    <div class="text-xs text-[#6E655F]">高級雙床房・2間 (26㎡，樓層3-12)｜無餐點｜單號 1616334408335637 (PIN: 9026)</div>
+                    <div class="text-xs text-emerald-700">✓ 1/25 前免費取消（走路 7 分鐘到 BGA 還車！）</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#2C2523] whitespace-nowrap">NT$ 9,104</td>
+                  <td class="p-4 bg-orange-50/40">
+                    <div class="text-xs sm:text-sm text-[#9A3412] font-bold">✈️ 去趣行程於 Day 7 (1/27) 前往福岡機場返台</div>
+                    <div class="text-xs text-[#6E655F]">（提醒：若維持 1/28 班機返台，可再加訂 1 晚博多住宿）</div>
+                  </td>
+                  <td class="p-4 text-right font-bold text-[#6E655F] bg-orange-50/40 whitespace-nowrap">—</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="bg-[#F3EDE2] font-extrabold text-[#2C2523] border-t-2 border-[#D6CFC5]">
+                  <td class="p-4">🏨 住宿小計</td>
+                  <td class="p-4 text-xs font-normal text-[#5C534E]">7 晚全數確認（含名護連住 3 晚 ＋ 瀨長島 4 客早餐）</td>
+                  <td class="p-4 text-right text-[#005F92] text-lg whitespace-nowrap">NT$ 43,329</td>
+                  <td class="p-4 text-xs font-normal text-[#5C534E]">6 晚全數確認（含竹之倉山莊一泊二食 ＋ OMO5熊本）</td>
+                  <td class="p-4 text-right text-[#9E3E1C] text-lg whitespace-nowrap">NT$ 48,111</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- 3. 新增：各景點門票與體驗預估費用明細表 -->
+        <div class="pt-4">
+          <h4 class="font-extrabold text-lg text-[#2C2523] mb-3 flex items-center gap-2">
+            <span>🎫</span>
+            <span>第二部分：每日景點門票與體驗預估費用明細表（4位大人）</span>
+          </h4>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <!-- 沖繩門票表 -->
+            <div class="rounded-2xl border border-[#BAE6FD] overflow-hidden bg-white">
+              <div class="bg-[#005F92] text-white px-4 py-3 font-extrabold flex justify-between items-center text-sm sm:text-base">
+                <span>🌺 沖繩冬日游・景點門票預估 (4人)</span>
+                <span class="bg-white/20 px-2.5 py-0.5 rounded-full text-xs">預估合計：NT$ 15,086</span>
+              </div>
+              <div class="divide-y divide-stone-100 text-xs sm:text-sm">
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 2｜首里城公園</strong> <span class="text-stone-500">(正殿付費區 ¥400×4)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 344</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 2｜殘波岬燈塔</strong> <span class="text-stone-500">(登塔參拜金 ¥300×4，不爬免費)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 258</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 2｜萬座毛</strong> <span class="text-stone-500">(象鼻岩步道門票 ¥100×4)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 86</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 3｜Orion 啤酒名護工廠</strong> <span class="text-stone-500">(導覽+試飲 ¥500×4)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 430</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 3｜名護自然動植物公園 NEO PARK</strong> <span class="text-stone-500">(KKday NT$289×4)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 1,156</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 3｜備瀨福木林道 ＆ 古宇利大橋</strong></div>
+                  <span class="font-bold text-emerald-700">免費 (NT$ 0)</span>
+                </div>
+                <div class="p-3 flex justify-between items-center bg-sky-50/50">
+                  <div><strong>Day 4｜沖繩 JUNGLIA 叢林樂園</strong> <span class="text-stone-500">(官方1日票 ¥8,800×4；加購SPA另計)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 7,568</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 5｜名護鳳梨園</strong> <span class="text-stone-500">(含自動鳳梨車 ¥1,200×4)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 1,032</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 5｜名護城跡賞櫻・海中道路・製鹽工廠・美國村</strong></div>
+                  <span class="font-bold text-emerald-700">免費 (NT$ 0)</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 6｜DMM Kariyushi 水族館</strong> <span class="text-stone-500">(成人 ¥2,800×4)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 2,408</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 7｜波上宮 ＆ 浦添 PARCO CITY</strong></div>
+                  <span class="font-bold text-emerald-700">免費 (NT$ 0)</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-sky-50/40">
+                  <div><strong>Day 7｜那霸水底觀光船 Orca</strong> <span class="text-stone-500">(KKday 船票 NT$451×4)</span></div>
+                  <span class="font-bold text-[#005F92]">NT$ 1,804</span>
+                </div>
+                <div class="p-3 bg-[#E0F2FE] font-extrabold flex justify-between items-center text-[#0369A1]">
+                  <span>🎫 沖繩門票預估小計 (每人 NT$ 3,772)</span>
+                  <span>NT$ 15,086</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 九州門票表 -->
+            <div class="rounded-2xl border border-[#FED7AA] overflow-hidden bg-white">
+              <div class="bg-[#9E3E1C] text-white px-4 py-3 font-extrabold flex justify-between items-center text-sm sm:text-base">
+                <span>♨️ 九州溫泉之旅・景點門票預估 (4人)</span>
+                <span class="bg-white/20 px-2.5 py-0.5 rounded-full text-xs">預估合計：NT$ 13,082</span>
+              </div>
+              <div class="divide-y divide-stone-100 text-xs sm:text-sm">
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 2｜浮羽稻荷神社 ＆ 道之驛浮羽</strong></div>
+                  <span class="font-bold text-emerald-700">免費 (NT$ 0)</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 2｜九州自然動物公園 African Safari</strong> <span class="text-stone-500">(入園 ¥2,600×4)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 2,236</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 3｜大分海洋宮殿水族館「海之卵」</strong> <span class="text-stone-500">(KKday NT$584×4)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 2,336</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 3｜南阿蘇鐵道觀光小火車「Yusuge號」</strong> <span class="text-stone-500">(¥1,380×4)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 1,187</span>
+                </div>
+                <div class="p-3 flex justify-between items-center bg-orange-50/50">
+                  <div><strong>Day 3｜終於找到的珍藏草莓園</strong> <span class="text-stone-500">(南阿蘇採草莓體驗預估 ¥2,200×4)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 1,892</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 4｜上色見熊野座神社・阿蘇山・草千里停車費</strong> <span class="text-stone-500">(約 ¥1,500/車)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 323</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 4｜熊本城天守閣</strong> <span class="text-stone-500">(¥800×4；城彩苑免費)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 688</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 5｜柳川遊船 伯舟觀光 (暖桌船)</strong> <span class="text-stone-500">(Klook 約 NT$390×4)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 1,560</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 5｜太宰府天滿宮</strong> <span class="text-stone-500">(參拜免費，停車場 ¥500/車)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 108</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 6｜櫛田神社・壱岐神社・三麗鷗夢幻樂園(免費入場)</strong></div>
+                  <span class="font-bold text-emerald-700">免費 (NT$ 0)</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 6｜teamLab 森林 福岡</strong> <span class="text-stone-500">(成人 ¥2,400×4)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 2,064</span>
+                </div>
+                <div class="p-3 flex justify-between items-center hover:bg-orange-50/40">
+                  <div><strong>Day 6｜福岡塔 高空展望台</strong> <span class="text-stone-500">(成人 ¥800×4)</span></div>
+                  <span class="font-bold text-[#9E3E1C]">NT$ 688</span>
+                </div>
+                <div class="p-3 bg-[#FFEDD5] font-extrabold flex justify-between items-center text-[#9A3412]">
+                  <span>🎫 九州門票預估小計 (每人 NT$ 3,271)</span>
+                  <span>NT$ 13,082</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 分頁 2：沖繩冬日游 (8日互動行程)            -->
+    <!-- ========================================== -->
+    <div id="view-okinawa" class="hidden space-y-6">
+      <div class="warm-card p-6 sm:p-7 bg-gradient-to-r from-[#005F92] to-[#0088B8] text-white flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
+        <div class="space-y-1.5">
+          <div class="inline-flex flex-wrap items-center gap-2 text-xs font-bold bg-white/20 px-3 py-1 rounded-full">
+            <span>🌺 方案一：沖繩冬日游 (8天7夜)</span>
+            <span>•</span>
+            <span>全預算總額：NT$ 157,532 (每人 NT$ 39,383)</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">沖繩 8 天 7 夜・TOYOTA ALPHARD 豪華自駕遊</h2>
+          <p class="text-sky-100 text-sm sm:text-base">第 1 晚已更新為國際通旁「那霸蒙特利拉蘇瑞飯店」，走路 6 分鐘即可取阿爾法休旅車！</p>
+        </div>
+        <div class="flex flex-wrap gap-2.5 shrink-0">
+          <button id="okinawaViewToggleBtn" onclick="toggleAllDaysMode('okinawa')" class="btn-lift px-4 py-2.5 rounded-xl bg-amber-300 hover:bg-amber-200 text-stone-900 font-extrabold text-sm shadow cursor-pointer">
+            📖 切換：展開全部 8 天連續看
+          </button>
+          <a href="https://chictrip-share.app.link/ChuQmK26n7b" target="_blank" rel="noopener noreferrer" class="btn-lift px-4 py-2.5 rounded-xl bg-white text-[#005F92] hover:bg-sky-50 font-extrabold text-sm shadow">
+            📲 開啟去趣原始行程
+          </a>
+        </div>
+      </div>
+
+      <!-- 沖繩 Day 選擇按鈕列 -->
+      <div id="okinawa-day-tabs" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5"></div>
+
+      <!-- 沖繩 行程內容容器 -->
+      <div id="okinawa-day-content" class="space-y-6"></div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 分頁 3：九州溫泉之旅 (7日互動行程)          -->
+    <!-- ========================================== -->
+    <div id="view-kyushu" class="hidden space-y-6">
+      <div class="warm-card p-6 sm:p-7 bg-gradient-to-r from-[#9E3E1C] to-[#C85A32] text-white flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
+        <div class="space-y-1.5">
+          <div class="inline-flex flex-wrap items-center gap-2 text-xs font-bold bg-white/20 px-3 py-1 rounded-full">
+            <span>♨️ 方案二：九州溫泉之旅 (7天6夜)</span>
+            <span>•</span>
+            <span>全預算總額：NT$ 203,549 (每人 NT$ 50,887)</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">九州 7 天 6 夜・新款 ALPHARD 雪胎豪華自駕遊</h2>
+          <p class="text-orange-100 text-sm sm:text-base">全新排定：九州自然動物公園、南阿蘇小火車＆珍藏草莓園、竹之倉山莊一泊二食、星野集團 OMO5 熊本、三麗鷗＆福岡塔！</p>
+        </div>
+        <div class="flex flex-wrap gap-2.5 shrink-0">
+          <button id="kyushuViewToggleBtn" onclick="toggleAllDaysMode('kyushu')" class="btn-lift px-4 py-2.5 rounded-xl bg-amber-300 hover:bg-amber-200 text-stone-900 font-extrabold text-sm shadow cursor-pointer">
+            📖 切換：展開全部 7 天連續看
+          </button>
+          <a href="https://chictrip-share.app.link/MUydUdZwo7b" target="_blank" rel="noopener noreferrer" class="btn-lift px-4 py-2.5 rounded-xl bg-white text-[#9E3E1C] hover:bg-orange-50 font-extrabold text-sm shadow">
+            📲 開啟去趣原始行程
+          </a>
+        </div>
+      </div>
+
+      <!-- 九州 Day 選擇按鈕列 -->
+      <div id="kyushu-day-tabs" class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5"></div>
+
+      <!-- 九州 行程內容容器 -->
+      <div id="kyushu-day-content" class="space-y-6"></div>
+    </div>
+
+  </main>
+
+  <!-- 溫馨彈出式提醒視窗 (Modal) -->
+  <div id="reminderModal" onclick="if(event.target === this) closeReminderModal()" class="fixed inset-0 z-50 hidden bg-stone-900/50 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-[#FFFDF9] rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border-2 border-[#E5DEC9] space-y-4">
+      <div class="flex items-start justify-between gap-3 border-b border-[#EAE3D9] pb-3.5">
+        <div class="flex items-center gap-2.5">
+          <span class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl">🔔</span>
+          <h3 id="modalTitle" class="text-lg sm:text-xl font-extrabold text-[#2C2523]">貼心提醒</h3>
+        </div>
+        <button onclick="closeReminderModal()" class="w-8 h-8 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 font-bold text-lg flex items-center justify-center cursor-pointer">✕</button>
+      </div>
+      <div id="modalBody" class="text-[#3D3531] text-base whitespace-pre-line leading-relaxed max-h-[65vh] overflow-y-auto pr-1"></div>
+      <div class="pt-2 flex justify-end">
+        <button onclick="closeReminderModal()" class="btn-lift px-6 py-2.5 rounded-xl bg-[#2C2523] hover:bg-[#433936] text-white font-bold text-sm cursor-pointer">
+          收到，關閉視窗
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    // =====================================================
+    // 完整行程資料庫：沖繩冬日游 (Day 1 ~ Day 8) - 已同步最新去趣＆PDF
+    // =====================================================
+    const okinawaDays = [
+      {
+        day: 1,
+        date: "2027/01/21 (週四)",
+        title: "長榮直飛抵達那霸・13分鐘直達國際通「那霸蒙特利拉蘇瑞飯店」",
+        summary: "桃園機場 (16:30起飛) → 那霸機場 (19:10抵達) → 開車/計程車 13分鐘 → 那霸蒙特利拉蘇瑞飯店",
+        momTip: "👗 媽媽穿搭與體力建議：新換的「那霸蒙特利拉蘇瑞飯店」就在國際通入口（縣廳前站），從那霸機場搭計程車只要 13 分鐘（約 ¥1,600），不用提行李轉車，明天早上走路 6 分鐘就能去取阿爾法休旅車！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Naha+Airport+Okinawa&destination=Hotel+Monterey+La+Soeur+Naha",
+        dayReminder: "1. 【航班確認】長榮航空直飛：桃園 (TPE) 16:30 起飛 → 沖繩那霸 (OKA) 19:10 抵達（4位大人總額 NT$ 79,552，每人含 2×23kg 託運行李）。\n2. 飯店下樓就是國際通商圈與全家便利商店，買宵夜超方便！",
+        stops: [
+          {
+            time: "19:10 ～ 20:00",
+            stay: "停留 50 分鐘",
+            name: "那霸機場（長榮航空 16:30 TPE → 19:10 OKA）",
+            category: "✈️ 機場抵達",
+            area: "沖繩-那霸",
+            ticketBadge: "✈️ 機票 NT$ 79,552 (4人)",
+            address: "沖繩縣那霸市鏡水150",
+            note: "【機票訂單已確認】長榮航空直飛班機，4 位成人（媽媽 TSAI HUI MEI、爸爸 CHANG SHUO HSUN、CHANG PO CHUN、弟弟 CHANG PO HSIANG）總價 TWD 79,552（每人 TWD 19,888）｜每人享手提 1×7kg ＋ 託運 2×23kg。",
+            reminder: "出關後可直接於國際線一樓搭乘計程車前往飯店，車程僅 13 分鐘！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=那霸機場+沖繩縣那霸市鏡水150",
+            officialUrl: "https://www.naha-airport.co.jp/zh-hant/",
+            officialLabel: "🌐 那霸機場官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/141432?cid=21657",
+            bookingLabel: "🚐 機場接送參考 (NT$2,270)",
+            nextTransport: "🚕 計程車/開車 約 13 分鐘"
+          },
+          {
+            time: "20:13 抵達",
+            stay: "入住休息 (第1晚)",
+            name: "那霸蒙特利拉蘇瑞飯店 (Hotel Monterey La Soeur Naha / ホテルモントレ ラ・スール那覇)",
+            category: "🏨 已確認新更換住宿",
+            area: "沖繩-那霸",
+            ticketBadge: "🏨 已付 NT$ 5,828 (2間)",
+            address: "1-1-2 Matsuo, 900-0014 那霸市, 沖繩縣 (沖繩縣那霸市松尾1丁目1-2)",
+            note: "【PDF訂單已確認】標準雙床房・2間（19㎡，樓層 3-11，無餐點）｜已付款 TWD 5,828｜訂單號：1616334496154025｜PIN碼：1019",
+            reminder: "入住時間 15:00 後，隔日 11:00 前退房；2027/01/17 23:59 前免費取消。電話：+81-98-8697111。距離明早 BGA 租車行步行僅 6 分鐘！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ホテルモントレ+ラ・スール那覇+那覇市松尾1-1-2",
+            officialUrl: "https://www.hotelmonterey.co.jp/lasoeur_naha/",
+            officialLabel: "🌐 蒙特利飯店官網",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=83818467&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結"
+          }
+        ]
+      },
+      {
+        day: 2,
+        date: "2027/01/22 (週五)",
+        title: "取 TOYOTA ALPHARD 出發・首里城、殘波岬、恩納市場、萬座毛、入住名護連住3晚",
+        summary: "蒙特利飯店 → BGA租車(取阿爾法) → 首里城公園 → 首里沖繩麵 → 殘波岬燈塔 → 恩納之驛市場 → 萬座毛 → 名護 Ao～碧～ホテル → A&W漢堡",
+        momTip: "👗 媽媽穿搭與體力建議：今天開始搭乘寬敞頭等艙座椅的「TOYOTA ALPHARD 阿爾法七人座」，4 個人加所有大行李箱空間超寬裕！今晚入住名護飯店連住 3 晚不用收行李！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Hotel+Monterey+La+Soeur+Naha&destination=Ao+Hotel+Nago+Okinawa&waypoints=Shurijo+Castle|Zanpa+Misaki+Lighthouse|Onna+no+Eki+Nakayukui+Market|Cape+Manzamo",
+        dayReminder: "1. 早上 09:06 走路 6 分鐘到 BGA 租車泉崎本店取 TOYOTA ALPHARD（已含 ETC 無限暢行方案＋頂級 NOC 免責保險）。\n2. ⚠️ 午餐「首里沖繩麵」14:00 打烊，預計 13:08 抵達請準時前往。",
+        stops: [
+          {
+            time: "08:00 ～ 09:00",
+            stay: "1 小時",
+            name: "那霸蒙特利拉蘇瑞飯店（退房出發）",
+            category: "🏨 退房出發",
+            area: "沖繩-那霸",
+            address: "沖繩縣那霸市松尾1丁目1-2",
+            note: "退房後步行 6 分鐘前往泉崎 BGA 租車行（或由司機先走去取車再開回飯店門口載媽媽與行李）。",
+            reminder: "請確認攜帶台灣駕照正本、日文譯本與護照。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ホテルモントレ+ラ・スール那覇",
+            officialUrl: "https://www.hotelmonterey.co.jp/lasoeur_naha/",
+            officialLabel: "🌐 飯店官方網站",
+            nextTransport: "🚶 步行 約 6 分鐘"
+          },
+          {
+            time: "09:06 ～ 09:36",
+            stay: "停留 30 分鐘",
+            name: "BGAレンタカー 沖縄 BGA RENTAL CAR (取車：TOYOTA ALPHARD)",
+            category: "🚐 阿爾法取車",
+            area: "沖繩-那霸",
+            ticketBadge: "🚐 6日租車 ¥91,000 (約NT$ 19,565)",
+            address: "〒900-0021 沖繩縣那霸市泉崎1丁目9-23 レジデンシア泉崎 1階",
+            note: "【PDF租車單已確認】車款：アルファード / TOYOTA ALPHARD｜租期：2027/01/22 09:00 ～ 01/27 19:00（6天5夜）｜包含：ETC Unlimited Usage Package (ETC無限吃到飽) ＋ ★Premium NOC Insurance★ (頂級免責保險)｜總價：JPY 91,000（約 NT$ 19,565）。",
+            reminder: "已包含最高等級免責保險與 ETC 無限暢行，沖繩高速公路過路費全包超划算！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=BGAレンタカー+那覇市泉崎1-9-23",
+            officialUrl: "https://bga-rentalcar.com/",
+            officialLabel: "🌐 BGA 租車官方網站",
+            nextTransport: "🚗 開車 約 28 分鐘"
+          },
+          {
+            time: "10:04 ～ 13:04",
+            stay: "停留 3 小時",
+            name: "首里城公園",
+            category: "🏯 琉球王國古蹟",
+            area: "沖繩-那霸",
+            ticketBadge: "🎫 門票預估：¥400/人 (4人約 NT$ 344)",
+            address: "沖繩縣那霸市首里金城町1-2",
+            note: "經過重建的山頂城堡，坐落在遼闊的園區內，是飽覽那霸城市全景的絕佳去處。",
+            reminder: "園區外圍守禮門與展望台免費，進入正殿付費區成人 ¥400；12:50 左右準時出發去吃首里沖繩麵。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=首里城公園+沖繩",
+            officialUrl: "https://oki-park.jp/shurijo/tc/",
+            officialLabel: "🌐 首里城公園繁中官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/22297?cid=21657",
+            bookingLabel: "🎫 觀光行程參考",
+            nextTransport: "🚗 開車 約 4 分鐘"
+          },
+          {
+            time: "13:08 ～ 14:08",
+            stay: "停留 1 小時",
+            name: "首里沖繩麵 (首里そば)",
+            category: "🍜 在地名店午餐",
+            area: "沖繩-那霸",
+            address: "沖繩縣那霸市首里赤田町1丁目7",
+            note: "首里城旁超人氣手工沖繩麵名店，鰹魚湯頭清甜、三層肉軟嫩入味。",
+            reminder: "⚠️ 【營業提醒：14:00 打烊】！預計 13:08 抵達，請留意時間。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=首里そば+沖繩縣那霸市首里赤田町1丁目7",
+            officialUrl: "https://tabelog.com/tw/okinawa/A4701/A470102/47000007/",
+            officialLabel: "🌐 Tabelog 餐廳介紹",
+            nextTransport: "🚗 開車 約 51 分鐘"
+          },
+          {
+            time: "14:59 ～ 15:59",
+            stay: "停留 1 小時",
+            name: "殘波岬燈塔",
+            category: "🌊 壯麗珊瑚礁斷崖",
+            area: "沖繩-讀谷村",
+            ticketBadge: "🎫 登塔 ¥300/人 (不爬燈塔免費)",
+            address: "675 Uza, Yomitan, Nakagami District, Okinawa 904-0328",
+            note: "30 公尺高的純白燈塔，塔頂可欣賞海岸美景（登塔須另外付費 ¥300），附近有 Blue Seal 冰淇淋車和可愛動物區。",
+            reminder: "海岸步道與廣場完全免費，媽媽在下方散步拍照吃紅芋冰淇淋最輕鬆！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=殘波岬燈塔+沖繩",
+            officialUrl: "https://www.yomitan-kankou.com/tourist/watch/1611314380/",
+            officialLabel: "🌐 讀谷村觀光協會介紹",
+            nextTransport: "🚗 開車 約 20 分鐘"
+          },
+          {
+            time: "16:19 ～ 17:19",
+            stay: "停留 1 小時",
+            name: "恩納之驛 休憩市場 (Onna no Eki Nakayukui Market)",
+            category: "🍧 農水產在地市集",
+            area: "沖繩-恩納村",
+            ticketBadge: "🎫 免費入場",
+            address: "1656-9 Nakadomari, Onna, Kunigami District, Okinawa 904-0415",
+            note: "這座濱海市場有多家攤販，販售麵食、甜點、當地特產及新鮮魚類料理。",
+            reminder: "推薦品嚐現炸沖繩沙翁（三矢本舖）與海膽醬烤扇貝。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=おんなの駅+なかゆくい市場",
+            officialUrl: "https://onnanoeki.com/",
+            officialLabel: "🌐 恩納之驛官方網站",
+            nextTransport: "🚗 開車 約 17 分鐘"
+          },
+          {
+            time: "17:36 ～ 18:36",
+            stay: "停留 1 小時",
+            name: "萬座毛",
+            category: "🐘 象鼻岩夕陽絕景",
+            area: "沖繩-恩納村",
+            ticketBadge: "🎫 門票：¥100/人 (4人約 NT$ 86)",
+            address: "Onna, Kunigami District, Okinawa 904-0411",
+            note: "狀似象鼻的海濱岩石，17:36 抵達正好欣賞夕陽海景，新建觀光大樓設有電梯與平整步道。",
+            reminder: "步道平緩無階梯，對媽媽非常友善。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=萬座毛+沖繩",
+            officialUrl: "https://www.manzamo.jp/",
+            officialLabel: "🌐 萬座毛官方網站",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/270690?cid=21657",
+            bookingLabel: "🎫 萬座毛套票參考",
+            nextTransport: "🚗 開車 約 38 分鐘"
+          },
+          {
+            time: "19:14 ～ 20:14",
+            stay: "辦理入住 (連住3晚)",
+            name: "Ao～碧～ホテル (Ao Hotel Nago)",
+            category: "🏨 已確認連住3晚",
+            area: "沖繩-名護市",
+            ticketBadge: "🏨 3晚總計 NT$ 12,731 (2間)",
+            address: "1672 Umusa, Nago, Okinawa 905-0006",
+            note: "【PDF訂單已確認】官網直接預訂 1/22～1/25 連住 3 晚（共 2 間雙人房，住 4 位成人）｜含稅總額 NT$ 12,730.97。",
+            reminder: "連住 3 晚免搬行李！放好行李後開車 3 分鐘去吃 A&W 漢堡。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Ao+碧+ホテル+1672+Umusa+Nago+Okinawa",
+            officialUrl: "https://www.google.com/search?q=Ao%EF%BD%9E%E7%A2%A7%EF%BD%9E%E3%83%9B%E3%83%86%E3%83%AB+%E5%90%8D%E8%AD%B7",
+            officialLabel: "🌐 飯店資訊查詢",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=23742584&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結",
+            nextTransport: "🚗 開車 約 3 分鐘"
+          },
+          {
+            time: "20:17 ～ 21:17",
+            stay: "停留 1 小時",
+            name: "A&W 漢堡 名護店 (A&W Meio Store)",
+            category: "🍔 沖繩限定速食",
+            area: "沖繩-名護市",
+            address: "1703-8 Umusa, Nago, Okinawa 905-0006",
+            note: "沖繩限定美式速食店，供應著名的麥根沙士、漂浮飲品、漢堡與捲捲薯條。",
+            reminder: "距離飯店僅 3 分鐘車程。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=A%26W+名護店+1703-8+Umusa+Nago",
+            officialUrl: "https://www.awok.co.jp/",
+            officialLabel: "🌐 A&W 沖繩官方網站"
+          }
+        ]
+      },
+      {
+        day: 3,
+        date: "2027/01/23 (週六)",
+        title: "沖繩北部慢遊・Orion啤酒廠、動植物公園小火車、花人逢海景披薩、備瀨福木林道、古宇利大橋",
+        summary: "Ao飯店出發 → Orion啤酒廠 → 名護自然動植物公園 → 花人逢披薩 → 備瀨福木林道 → 古宇利大橋 → 濱壽司＆名護炸雞",
+        momTip: "👗 媽媽穿搭與體力建議：今天車程都很短（每段 10～25 分鐘），動植物公園有遊園小火車可搭，備瀨福木林道綠蔭平坦，午餐在山頂古民家邊看大海邊吃披薩！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Ao+Hotel+Nago+Okinawa&destination=Ao+Hotel+Nago+Okinawa&waypoints=Orion+Happy+Park|Neo+Park+Okinawa|Kajinhou+Motobu|Bise+Fukugi+Tree+Road|Kouri+Bridge+Observation+Deck",
+        dayReminder: "1. ⚠️ Orion 啤酒廠 09:30 開始營業，參觀導覽需事先於官網預約（門票 ¥500/人）！\n2. 午餐「花人逢」通常僅收日幣現金（Cash Only），請備妥日圓現鈔。",
+        stops: [
+          {
+            time: "08:00 ～ 09:00",
+            stay: "1 小時",
+            name: "Ao～碧～ホテル（早晨輕裝出發）",
+            category: "🏨 飯店出發",
+            area: "沖繩-名護市",
+            address: "1672 Umusa, Nago, Okinawa 905-0006",
+            note: "今晚繼續連住同一間飯店，大件行李留在房內即可！",
+            reminder: "出發前確認攜帶日幣現金（午餐花人逢使用）。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Ao+碧+ホテル+1672+Umusa+Nago",
+            officialUrl: "https://www.google.com/search?q=Ao%EF%BD%9E%E7%A2%A7%EF%BD%9E%E3%83%9B%E3%83%86%E3%83%AB+%E5%90%8D%E8%AD%B7",
+            officialLabel: "🌐 飯店資訊",
+            nextTransport: "🚗 開車 約 10 分鐘"
+          },
+          {
+            time: "09:10 ～ 10:10",
+            stay: "停留 1 小時",
+            name: "Orion 啤酒名護工廠 (Orion Happy Park)",
+            category: "🍺 觀光工廠導覽",
+            area: "沖繩-名護市",
+            ticketBadge: "🎫 導覽費：¥500/人 (4人約 NT$ 430)",
+            address: "2 Chome-2-1 Agarie, Nago, Okinawa 905-0021",
+            note: "提供釀酒導覽行程，包括參觀裝瓶過程與免費品酒體驗。",
+            reminder: "⚠️ 【營業提醒：09:30 開始營業】！請事先於官網預約導覽場次；開車司機可領取無酒精飲品。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Orion+Happy+Park+Nago+Okinawa",
+            officialUrl: "https://www.orionbeer.co.jp/happypark/",
+            officialLabel: "🌐 Orion 啤酒廠預約官網",
+            nextTransport: "🚗 開車 約 10 分鐘"
+          },
+          {
+            time: "10:20 ～ 13:20",
+            stay: "停留 3 小時",
+            name: "名護自然動植物公園 (NEO PARK OKINAWA)",
+            category: "🦩 森林動植物園",
+            area: "沖繩-名護市",
+            ticketBadge: "🎫 門票：NT$ 289/人 (4人 NT$ 1,156)",
+            address: "4607-41 Nago, Okinawa 905-0012",
+            note: "歷久不衰的植物園與動物園，設有水豚與象龜觸摸餵食區，亦有輕鬆省力的遊園小火車。",
+            reminder: "推薦帶媽媽搭乘「遊園小火車」繞園一圈聽導覽，省力又好玩！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=NEO+PARK+OKINAWA+名護自然動植物公園",
+            officialUrl: "https://www.neopark.co.jp/",
+            officialLabel: "🌐 名護動植物公園官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/34515?cid=21657",
+            bookingLabel: "🎫 線上優惠門票 (NT$289)",
+            nextTransport: "🚗 開車 約 29 分鐘"
+          },
+          {
+            time: "13:49 ～ 14:49",
+            stay: "停留 1 小時",
+            name: "披薩喫茶 花人逢 (Kajinhou)",
+            category: "🍕 山頂海景餐廳",
+            area: "沖繩-本部町",
+            address: "〒905-0219 沖繩縣國頭郡本部町山里1153-2",
+            note: "位於山頂的傳統沖繩紅瓦房舍，供應手工起司披薩及新鮮沙拉，可欣賞伊江島與大海全景。",
+            reminder: "⚠️ 注意：店內僅收日幣現金（Cash Only）。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=花人逢+沖繩本部町",
+            officialUrl: "https://kajinhou.com/",
+            officialLabel: "🌐 花人逢官方網站",
+            nextTransport: "🚗 開車 約 12 分鐘"
+          },
+          {
+            time: "15:01 ～ 16:01",
+            stay: "停留 1 小時",
+            name: "備瀨福木林道 (Bise-Fukugi Tree Road)",
+            category: "🌳 300年綠色隧道",
+            area: "沖繩-本部町",
+            ticketBadge: "🎫 免費散步",
+            address: "389 Bise, Motobu, Kunigami District, Okinawa 905-0207",
+            note: "穿梭在有 300 年歷史的備瀨福木林道間，還能走到海岸邊眺望對岸的伊江島，步道平坦幽靜。",
+            reminder: "路面平坦好走，入口處也有出租電動代步車或協力車。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=備瀬のフクギ並木+沖繩",
+            officialUrl: "https://visitokinawajapan.com/zh-hant/destinations/okinawa-main-island/northern-okinawa-main-island/bise-fukugi-tree-lined-street/",
+            officialLabel: "🌐 沖繩觀光局中文介紹",
+            nextTransport: "🚗 開車 約 25 分鐘"
+          },
+          {
+            time: "16:26 ～ 17:26",
+            stay: "停留 1 小時",
+            name: "古宇利大橋 南端觀景台",
+            category: "🌉 漸層海景跨海大橋",
+            area: "沖繩-名護市",
+            ticketBadge: "🎫 免費通行觀景",
+            address: "Sumuide, Nago, Okinawa 905-1635",
+            note: "連接 2 座島嶼的現代化跨海大橋，以壯麗的「古宇利藍」漸層海景聞名。",
+            reminder: "可在觀景台拍照後開車過橋兜風。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=古宇利大橋南端展望所",
+            officialUrl: "https://visitokinawajapan.com/zh-hant/destinations/okinawa-main-island/northern-okinawa-main-island/kouri-island/",
+            officialLabel: "🌐 古宇利島官方介紹",
+            nextTransport: "🚗 開車 約 24 分鐘"
+          },
+          {
+            time: "17:50 ～ 18:50",
+            stay: "停留 1 小時",
+            name: "HAMA 濱壽司 名護店",
+            category: "🍣 迴轉壽司晚餐",
+            area: "沖繩-名護市",
+            address: "1475-2 Miyazato, Nago, Okinawa 905-0011",
+            note: "人氣連鎖迴轉壽司，平板支援繁體中文點餐，有熱湯、茶碗蒸、烏龍麵與握壽司。",
+            reminder: "免費大型平面停車場。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=はま寿司+名護店+1475-2+Miyazato+Nago",
+            officialUrl: "https://www.hamazushi.com/",
+            officialLabel: "🌐 HAMA 壽司官方網站",
+            nextTransport: "🚗 開車 約 5 分鐘"
+          },
+          {
+            time: "18:55 ～ 19:25",
+            stay: "停留 30 分鐘",
+            name: "名護炸雞 (名護チキン)",
+            category: "🍗 在地宵夜點心",
+            area: "沖繩-名護市",
+            address: "479-11 Biimata, Nago, Okinawa 905-0005",
+            note: "外帶一份香脆名護炸雞回飯店當宵夜！",
+            reminder: "距離飯店僅 2 分鐘車程。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=479-11+Biimata+Nago+Okinawa",
+            officialUrl: "https://www.google.com/search?q=479-11+Biimata+Nago+Okinawa+Chicken",
+            officialLabel: "🌐 店家資訊查詢",
+            nextTransport: "🚗 開車 約 2 分鐘"
+          },
+          {
+            time: "19:27 抵達",
+            stay: "連住第 2 晚",
+            name: "Ao～碧～ホテル",
+            category: "🏨 已確認連住",
+            area: "沖繩-名護市",
+            address: "1672 Umusa, Nago, Okinawa 905-0006",
+            note: "回到名護連住飯店休息，明早也不用收行李。",
+            reminder: "明天前往全新開幕的 JUNGLIA 叢林樂園！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Ao+碧+ホテル+1672+Umusa+Nago",
+            officialUrl: "https://www.google.com/search?q=Ao%EF%BD%9E%E7%A2%A7%EF%BD%9E%E3%83%9B%E3%83%86%E3%83%AB+%E5%90%8D%E8%AD%B7",
+            officialLabel: "🌐 飯店資訊"
+          }
+        ]
+      },
+      {
+        day: 4,
+        date: "2027/01/24 (週日)",
+        title: "沖繩最新地標・JUNGLIA 叢林樂園＆森林溫泉 SPA 慢活一日遊",
+        summary: "Ao飯店出發 → 沖繩 JUNGLIA 叢林樂園 (ジャングリア沖縄) 全日體驗 → 返回 Ao飯店連住第3晚",
+        momTip: "👗 媽媽穿搭與體力建議：從飯店開車過去只要 16 分鐘！JUNGLIA 有世界級的「SPA JUNGLIA 無邊際森林溫泉」與鳥巢全景餐廳，媽媽可以邊泡湯邊看山原森林與大海，累了隨時也能開車 16 分鐘回飯店休息！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Ao+Hotel+Nago+Okinawa&destination=Junglia+Okinawa+Nakijin",
+        dayReminder: "1. ⚠️ 沖繩 JUNGLIA 叢林樂園為 10:00 開始營業。\n2. 官方成人 1 日門票為 ¥8,800（約 NT$ 1,892/人，4人約 NT$ 7,568）；若加購 SPA 溫泉體驗為 ¥3,080/人。",
+        stops: [
+          {
+            time: "08:00 ～ 09:00",
+            stay: "1 小時",
+            name: "Ao～碧～ホテル（早晨輕裝出發）",
+            category: "🏨 飯店出發",
+            area: "沖繩-名護市",
+            address: "1672 Umusa, Nago, Okinawa 905-0006",
+            note: "今晚繼續住同一間飯店（連住第 3 晚），吃完早餐悠閒出發。",
+            reminder: "請攜帶 JUNGLIA 門票 QR Code。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Ao+碧+ホテル+1672+Umusa+Nago",
+            officialUrl: "https://www.google.com/search?q=Ao%EF%BD%9E%E7%A2%A7%EF%BD%9E%E3%83%9B%E3%83%86%E3%83%AB+%E5%90%8D%E8%AD%B7",
+            officialLabel: "🌐 飯店資訊",
+            nextTransport: "🚗 開車 約 16 分鐘"
+          },
+          {
+            time: "09:16 ～ 19:16",
+            stay: "停留 10 小時 (彈性)",
+            name: "沖繩 JUNGLIA 叢林樂園 (ジャングリア沖縄)",
+            category: "🦖 全新森林渡假樂園",
+            area: "沖繩-今歸仁村",
+            ticketBadge: "🎫 1日票：¥8,800/人 (4人約 NT$ 7,568)",
+            address: "〒905-0413 沖繩縣國頭郡今歸仁村吳我山553番地1",
+            note: "沖繩最新開幕的大型渡假園區！有 360 度全景熱氣球、叢林探險車、Panorama Dining 景觀餐廳，以及頂級無邊際森林溫泉 SPA。",
+            reminder: "⚠️ 【營業提醒：10:00 開始營業】！飯店離樂園僅 16 分鐘車程，停留時間可依媽媽體力彈性調整。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ジャングリア沖縄+JUNGLIA+OKINAWA",
+            officialUrl: "https://junglia.jp/tc/",
+            officialLabel: "🌐 JUNGLIA 繁中官方網站",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/265423?cid=21657",
+            bookingLabel: "🎫 JUNGLIA 預訂連結",
+            nextTransport: "🚗 開車 約 16 分鐘"
+          },
+          {
+            time: "19:32 抵達",
+            stay: "連住第 3 晚",
+            name: "Ao～碧～ホテル",
+            category: "🏨 已確認連住",
+            area: "沖繩-名護市",
+            address: "1672 Umusa, Nago, Okinawa 905-0006",
+            note: "在名護的最後一晚，今晚整理好行李，明天退房往中南部出發。",
+            reminder: "明早第一個景點「名護鳳梨園」10:00 開門且離飯店僅 4 分鐘，明早可悠閒睡到 09:40 再退房！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Ao+碧+ホテル+1672+Umusa+Nago",
+            officialUrl: "https://www.google.com/search?q=Ao%EF%BD%9E%E7%A2%A7%EF%BD%9E%E3%83%9B%E3%83%86%E3%83%AB+%E5%90%8D%E8%AD%B7",
+            officialLabel: "🌐 飯店資訊"
+          }
+        ]
+      },
+      {
+        day: 5,
+        date: "2027/01/25 (週一)",
+        title: "名護鳳梨園、1月名護城賞早櫻、海中道路製鹽工廠、美國村＆琉球之牛燒肉",
+        summary: "名護退房 → 名護鳳梨園 → 名護城跡(賞櫻) → PANCHORI-NA麵包 → 海中道路彩橋館 → 命御庭製鹽工廠 → 美國村 → 琉球之牛 → 那霸縣廳南口飯店",
+        momTip: "👗 媽媽穿搭與體力建議：早上的鳳梨園全程搭全自動鳳梨車免走路；1月底名護城剛好盛開桃紅色的琉球寒緋櫻；傍晚在美國村看海景、吃頂級和牛燒肉「琉球之牛」！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Ao+Hotel+Nago+Okinawa&destination=New+Normal+Condo+Izumizaki+Naha&waypoints=Nago+Pineapple+Park|Nago+Castle+Park|Umi+no+Eki+Ayahashikan|Nuchimasu+Salt+Factory|American+Village+Okinawa",
+        dayReminder: "1. ⚠️ 名護鳳梨園 10:00 開始營業（門票 ¥1,200/人，4人約 NT$ 1,032）。\n2. 晚餐「琉球之牛 北谷店」建議出發前先在官網完成線上訂位！",
+        stops: [
+          {
+            time: "08:00 ～ 09:00",
+            stay: "退房出發",
+            name: "Ao～碧～ホテル（退房）",
+            category: "🏨 退房出發",
+            area: "沖繩-名護市",
+            address: "1672 Umusa, Nago, Okinawa 905-0006",
+            note: "結束名護 3 晚住宿，將行李搬上寬敞的 ALPHARD 休旅車。",
+            reminder: "鳳梨園 10:00 開門，車程僅 4 分鐘，可悠閒退房出發。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Ao+碧+ホテル+1672+Umusa+Nago",
+            officialUrl: "https://www.google.com/search?q=Ao%EF%BD%9E%E7%A2%A7%EF%BD%9E%E3%83%9B%E3%83%86%E3%83%AB+%E5%90%8D%E8%AD%B7",
+            officialLabel: "🌐 飯店資訊",
+            nextTransport: "🚗 開車 約 4 分鐘"
+          },
+          {
+            time: "09:04 (10:00開園) ～ 11:04",
+            stay: "停留 2 小時",
+            name: "名護鳳梨園 (Nago Pineapple Park)",
+            category: "🍍 自動遊園車＆酒莊",
+            area: "沖繩-名護市",
+            ticketBadge: "🎫 門票：¥1,200/人 (4人約 NT$ 1,032)",
+            address: "1195 Biimata, Nago, Okinawa 905-0005",
+            note: "主題公園，能搭乘自動鳳梨號探索鳳梨生態，園內設有酒莊、咖啡廳和禮品店。",
+            reminder: "⚠️ 【營業提醒：10:00 開始營業】！含自動遊園車，媽媽免走路。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Nago+Pineapple+Park+名護鳳梨園",
+            officialUrl: "https://www.nagopine.com/tw/",
+            officialLabel: "🌐 名護鳳梨園繁中官網",
+            nextTransport: "🚗 開車 約 15 分鐘"
+          },
+          {
+            time: "11:19 ～ 12:19",
+            stay: "停留 1 小時",
+            name: "名護城跡 (1月賞琉球寒緋櫻)",
+            category: "🌸 冬季限定賞櫻",
+            area: "沖繩-名護市",
+            ticketBadge: "🎫 免費入園",
+            address: "5511 Nago, Okinawa 905-0012",
+            note: "1 月下旬正是名護城寒緋櫻盛開期，桃紅櫻花配名護灣海景超美。",
+            reminder: "可直接把車開到上方展望台停車場，減少爬階梯。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=名護城公園+沖繩",
+            officialUrl: "https://visitokinawajapan.com/zh-hant/discover/events/cherry-blossom-festivals-okinawa/",
+            officialLabel: "🌐 沖繩賞櫻官方指南",
+            nextTransport: "🚗 開車 約 6 分鐘"
+          },
+          {
+            time: "12:25 ～ 12:35",
+            stay: "停留 10 分鐘",
+            name: "PANCHORI-NA 麵包店 (パンチョリーナ)",
+            category: "🥐 名護第一烘焙坊",
+            area: "沖繩-名護市",
+            address: "3 Chome-1-18 Onaka, Nago, Okinawa 905-0017",
+            note: "小巧的鄉村風外帶糕餅店，販售各式各樣的甜鹹點心。",
+            reminder: "買在車上前往海中道路時享用。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=パンチョリーナ+名護",
+            officialUrl: "https://tabelog.com/tw/okinawa/A4702/A470201/47004056/",
+            officialLabel: "🌐 Tabelog 麵包店介紹",
+            nextTransport: "🚗 開車 約 61 分鐘"
+          },
+          {
+            time: "13:36 ～ 14:06",
+            stay: "停留 30 分鐘",
+            name: "海之驛站 彩橋館 (海中道路)",
+            category: "🌊 跨海道路休息站",
+            area: "沖繩-宇流麻市",
+            ticketBadge: "🎫 免費參觀",
+            address: "〒904-2427 沖繩縣宇流麻市與那城屋平4",
+            note: "位於 4.7 公里海中道路中央的休息站，兩側皆是碧藍淺灘海景。",
+            reminder: "中途下車上洗手間、吹海風拍照。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=海の駅あやはし館+沖繩",
+            officialUrl: "https://www.ayahashikan.com/",
+            officialLabel: "🌐 彩橋館官方網站",
+            nextTransport: "🚗 開車 約 13 分鐘"
+          },
+          {
+            time: "14:19 ～ 15:19",
+            stay: "停留 1 小時",
+            name: "命御庭 製鹽工廠 (ぬちまーす) ＆ 果報崖",
+            category: "🧂 絕景與礦物質海鹽",
+            area: "沖繩-宇流麻市",
+            ticketBadge: "🎫 免費參觀",
+            address: "2768 Yonashiromiyagi, Uruma, Okinawa 904-2423",
+            note: "免費參觀世界礦物質含量最高的「命之鹽」工廠，旁有絕美斷崖「果報崖 (幸福海角)」。",
+            reminder: "必買雪鹽伴手禮與鹽味霜淇淋！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ぬちまーす観光製塩ファクトリー+果報バンタ",
+            officialUrl: "https://nuchima-su.co.jp/",
+            officialLabel: "🌐 命御庭製鹽工廠官網",
+            nextTransport: "🚗 開車 約 54 分鐘"
+          },
+          {
+            time: "16:13 ～ 17:13",
+            stay: "停留 1 小時",
+            name: "美濱美國村 (American Village)",
+            category: "🎡 海濱夕陽小鎮",
+            area: "沖繩-北谷町",
+            ticketBadge: "🎫 免費漫步",
+            address: "沖繩縣中頭郡北谷町美濱 904-0115",
+            note: "異國風情臨海商場與日落海灘步道，傍晚散步看夕陽。",
+            reminder: "散步後步行 9 分鐘前往琉球之牛。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=美浜アメリカンビレッジ+北谷",
+            officialUrl: "https://www.okinawa-americanvillage.com/",
+            officialLabel: "🌐 美國村官方網站",
+            nextTransport: "🚶 步行 約 9 分鐘"
+          },
+          {
+            time: "17:22 ～ 18:22",
+            stay: "停留 1 小時",
+            name: "琉球之牛 北谷店 (美國村)",
+            category: "🥩 頂級和牛燒肉晚餐",
+            area: "沖繩-北谷町",
+            address: "〒904-0115 沖繩縣中頭郡北谷町美濱51-1 マカイリゾート北谷 2F",
+            note: "沖繩最知名的頂級和牛燒肉專門店，採舒適半包廂座位。",
+            reminder: "⚠️ 請事先透過官網線上預約晚餐時段！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=焼肉+琉球の牛+北谷店",
+            officialUrl: "https://www.u-shi.net/chinese/",
+            officialLabel: "🌐 琉球之牛中文官網(訂位)",
+            nextTransport: "🚗 開車 約 38 分鐘"
+          },
+          {
+            time: "19:00 抵達",
+            stay: "入住休息 (第5晚)",
+            name: "新常態公寓式飯店 縣廳南口 (New Normal Condo)",
+            category: "🏨 已確認住宿",
+            area: "沖繩-那霸",
+            ticketBadge: "🏨 已付 NT$ 3,563 (1間4人)",
+            address: "2-chōme-10-6 Izumizaki, 900-0021 那霸市, 沖繩縣",
+            note: "【PDF訂單已確認】豪華套房・1間（2張單人床＋1張雙人床，住4人，27㎡，位於1樓）｜已付款 TWD 3,563｜單號：1616334446342475｜PIN碼：7771",
+            reminder: "15:00 後自助入住，隔日 10:00 前退房；1/22 前免費取消。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ニューノーマルコンドイン県庁南口+那霸市泉崎2丁目10-6",
+            officialUrl: "https://www.google.com/search?q=ニューノーマルコンドイン県庁南口",
+            officialLabel: "🌐 飯店資訊查詢",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=69316293&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結"
+          }
+        ]
+      },
+      {
+        day: 6,
+        date: "2027/01/26 (週二)",
+        title: "南部海景與溫泉・DMM水族館、沖繩好市多、奧武島天婦羅、瀨長島露天溫泉飯店",
+        summary: "那霸出發 → DMM Kariyushi水族館 → Kohnan PRO → 沖繩南城好市多 → Nirai Kanai橋 → 中本鮮魚天婦羅 → 琉球溫泉瀨長島飯店",
+        momTip: "👗 媽媽穿搭與體力建議：早上去室內看 DMM 水族館、中午逛沖繩好市多，下午 16:08 提早入住「瀨長島溫泉飯店」，在房間私人露天浴缸泡湯看飛機起降！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=2-10-6+Izumizaki+Naha+Okinawa&destination=Ryukyu+Onsen+Senagajima+Hotel&waypoints=DMM+Kariyushi+Aquarium|Costco+Wholesale+Okinawa+Nanjo|Nirai+Kanai+Bridge|Nakamoto+Sengyo+Tempura",
+        dayReminder: "1. ⚠️ 逛「好市多 沖繩南城倉庫店」記得帶台灣 Costco 會員卡與 Mastercard 萬事達信用卡！\n2. 今晚「琉球溫泉 瀨長島飯店」含房間私人露天浴缸、龍神之湯大浴場與隔天 4 客豐盛早餐！",
+        stops: [
+          {
+            time: "08:00 ～ 09:00",
+            stay: "1 小時",
+            name: "新常態公寓式飯店 縣廳南口（退房出發）",
+            category: "🏨 退房出發",
+            area: "沖繩-那霸",
+            address: "那霸市泉崎2丁目10-6",
+            note: "10:00 前退房，開車前往豐見城市。",
+            reminder: "位於 1 樓上下行李非常方便。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ニューノーマルコンドイン県庁南口",
+            officialUrl: "https://www.google.com/search?q=ニューノーマルコンドイン県庁南口",
+            officialLabel: "🌐 飯店資訊",
+            nextTransport: "🚗 開車 約 22 分鐘"
+          },
+          {
+            time: "09:22 ～ 12:22",
+            stay: "停留 3 小時",
+            name: "DMM Kariyushi 水族館 ＆ iias 沖繩豐崎百貨",
+            category: "🐠 室內光影水族館",
+            area: "沖繩-豐見城市",
+            ticketBadge: "🎫 門票：¥2,800/人 (4人約 NT$ 2,408)",
+            address: "〒901-0225 沖繩縣豐見城市豐崎3-35",
+            note: "結合光影科技與海洋生物的室內水族館，有水母區、企鵝與樹懶，全室內動線平坦。",
+            reminder: "逛完水族館還可在 iias 百貨逛街喝咖啡。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=DMM+かりゆし水族館+沖繩",
+            officialUrl: "https://kariyushi-aquarium.com/tc/",
+            officialLabel: "🌐 DMM 水族館繁中官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/285410?cid=21657",
+            bookingLabel: "🎫 南部行程門票參考",
+            nextTransport: "🚗 開車 約 5 分鐘"
+          },
+          {
+            time: "12:27 ～ 12:57",
+            stay: "停留 30 分鐘",
+            name: "Kohnan PRO 豐崎店",
+            category: "🛠️ 日本生活五金百貨",
+            area: "沖繩-豐見城市",
+            address: "1-420 Toyosaki, Tomigusuku, Okinawa 901-0225",
+            note: "日本大型五金與生活居家賣場。",
+            reminder: "停車免費。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=コーナンPRO豊見城豊崎店",
+            officialUrl: "https://map.hc-kohnan.com/shop/382",
+            officialLabel: "🌐 店鋪官方資訊",
+            nextTransport: "🚗 開車 約 33 分鐘"
+          },
+          {
+            time: "13:30 ～ 14:30",
+            stay: "停留 1 小時",
+            name: "好市多 沖繩南城倉庫店 (Costco Okinawa Nanjo)",
+            category: "🛒 日本好市多採買",
+            area: "沖繩-南城市",
+            address: "沖繩縣南城市つきしろ IC南土地区画整理事業地内1街区1",
+            note: "沖繩首間好市多倉庫店，販售日本限定零食、壽司熟食與雜貨。",
+            reminder: "⚠️ 請攜帶台灣好市多會員卡與 Mastercard 萬事達卡。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Costco+Wholesale+Okinawa+Nanjo+Warehouse",
+            officialUrl: "https://www.costco.co.jp/store-finder/Okinawa%20Nanjo",
+            officialLabel: "🌐 日本好市多沖繩店官網",
+            nextTransport: "🚗 開車 約 7 分鐘"
+          },
+          {
+            time: "14:37 ～ 14:52",
+            stay: "停留 15 分鐘",
+            name: "Nirai Kanai 橋 (ニライカナイ橋)",
+            category: "🌉 南部最美觀海彎道",
+            area: "沖繩-南城市",
+            ticketBadge: "🎫 免費通行",
+            address: "Yoshitomi Chinen, Nanjo, Okinawa 901-1513",
+            note: "穿出隧道瞬間豁然開朗的 U 型海景大橋，坐在阿爾法車內就能飽覽太平洋海景。",
+            reminder: "橋上禁止臨停，慢速兜風欣賞海景。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ニライカナイ橋+沖繩南城市",
+            officialUrl: "https://www.kankou-nanjo.okinawa/tokusyu/viewspot/post_235.html",
+            officialLabel: "🌐 南城市觀光協會介紹",
+            nextTransport: "🚗 開車 約 15 分鐘"
+          },
+          {
+            time: "15:07 ～ 15:37",
+            stay: "停留 30 分鐘",
+            name: "奧武島 中本鮮魚天婦羅店",
+            category: "🍤 現炸海味天婦羅",
+            area: "沖繩-南城市",
+            address: "沖繩縣南城市玉城奧武9-9",
+            note: "奧武島超人氣名店，現炸鮮魚、花枝、海蘊與紅芋天婦羅。",
+            reminder: "買完點心開車 31 分鐘直達瀨長島溫泉飯店！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=中本鮮魚てんぷら店+奥武島",
+            officialUrl: "https://nakamotosengyoten.com/",
+            officialLabel: "🌐 中本鮮魚天婦羅官網",
+            nextTransport: "🚗 開車 約 31 分鐘"
+          },
+          {
+            time: "16:08 抵達",
+            stay: "入住海景溫泉房 (第6晚)",
+            name: "琉球溫泉 瀨長島飯店 (Ryukyu Onsen Senagajima Hotel)",
+            category: "♨️ 已確認頂級溫泉飯店",
+            area: "沖繩-豐見城市",
+            ticketBadge: "🏨 已付 NT$ 12,103 (含4客早餐)",
+            address: "174-5 Senaga, 901-0233 豐見城市, 沖繩縣",
+            note: "【PDF訂單已確認】瀨長豪華和洋式房・機場景觀帶露天浴缸・1間（35-38㎡，住4人，含隔日 1/27 早餐 4 客）｜已付款 TWD 12,103｜單號：1616334407661322｜PIN碼：7682",
+            reminder: "✨ 房間陽台就有私人露天溫泉池可看飛機起降，還能免費泡「龍神之湯」大浴場與逛樓下純白瀨長島海風露台！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=琉球温泉瀬長島ホテル+沖繩",
+            officialUrl: "https://www.hotelwbf.com/senaga/zh-tw/",
+            officialLabel: "🌐 瀨長島飯店繁中官網",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=532432&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結"
+          }
+        ]
+      },
+      {
+        day: 7,
+        date: "2027/01/27 (週三)",
+        title: "瀨長島早餐、波上宮祈福、Orca水底觀光船、PARCO CITY 大採購、入住櫻花酒店＆BGA還車",
+        summary: "瀨長島飯店早餐 → 波上宮 → 水底觀光船 Orca (11:30班次) → 浦添 PARCO CITY 百貨 → JR九州Blossom飯店那霸 → BGA還車",
+        momTip: "👗 媽媽穿搭與體力建議：中午搭大型玻璃水底觀光船坐著看海底珊瑚礁，下午在 PARCO CITY 百貨逛街 5 小時！傍晚 18:04 先送媽媽到國際通「JR九州Blossom飯店」休息，司機再開 7 分鐘去 BGA 還車！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Ryukyu+Onsen+Senagajima+Hotel&destination=BGA+Rental+Car+Izumizaki+Naha&waypoints=Naminoue+Shrine|Naha+Wharf+Orca|SAN-A+Urasoe+West+Coast+PARCO+CITY|JR+Kyushu+Hotel+Blossom+Naha",
+        dayReminder: "1. ⚠️ 「水底觀光船 Orca」筆記標註搭乘【11:30 班次】（船票 NT$ 451/人）。\n2. ⚠️ 「沖縄 BGA RENTAL CAR」營業提醒為【19:00 打烊】（訂單還車時間 19:00），18:04 到飯店下完行李後請準時於 18:41 抵達還車！",
+        stops: [
+          {
+            time: "08:00 ～ 10:00",
+            stay: "2 小時 (含4客早餐)",
+            name: "琉球溫泉 瀨長島飯店（享用豐盛早餐＆退房）",
+            category: "🍳 飯店早餐＆退房",
+            area: "沖繩-豐見城市",
+            address: "沖繩縣豐見城市瀨長174-5",
+            note: "享用訂單包含的 4 客精緻早餐，10:00 退房出發。",
+            reminder: "早起可再泡一次晨湯看海景。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=琉球温泉瀬長島ホテル",
+            officialUrl: "https://www.hotelwbf.com/senaga/zh-tw/",
+            officialLabel: "🌐 瀨長島飯店繁中官網",
+            nextTransport: "🚗 開車 約 19 分鐘"
+          },
+          {
+            time: "10:19 ～ 10:49",
+            stay: "停留 30 分鐘",
+            name: "波上宮 (Naminoue Shrine)",
+            category: "⛩️ 懸崖海景神社",
+            area: "沖繩-那霸",
+            ticketBadge: "🎫 免費參拜",
+            address: "沖繩縣那霸市若狹1丁目25-11",
+            note: "建於 1890 年的懸崖神社，祈求全家旅途平安，紅型小書包御守非常可愛。",
+            reminder: "旁邊就是波之上海灘。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=波上宮+沖繩那霸",
+            officialUrl: "https://visitokinawajapan.com/zh-hant/destinations/okinawa-main-island/southern-okinawa-main-island/naminoue-shrine-and-beach/",
+            officialLabel: "🌐 波上宮中文介紹",
+            nextTransport: "🚗 開車 約 6 分鐘"
+          },
+          {
+            time: "10:55 ～ 12:25",
+            stay: "停留 1 小時 30 分",
+            name: "那霸水底觀光船 Orca (水中観光船オルカ号)",
+            category: "🛳️ 海底玻璃觀光船",
+            area: "沖繩-那霸",
+            ticketBadge: "🎫 船票：NT$ 451/人 (4人 NT$ 1,804)",
+            address: "沖繩縣那霸市通堂町2-1 (那霸埠頭船客待合所)",
+            note: "【筆記提醒：Orca2 11:30 班次】走下寬敞的船底玻璃觀景艙，坐著欣賞沖繩海底珊瑚礁與熱帶魚群！",
+            reminder: "⚠️ 開船前 20 分鐘於一樓櫃檯完成報到換票。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=那覇埠頭船客待合所+水中観光船オルカ",
+            officialUrl: "https://www.westmarine.co.jp/orca/",
+            officialLabel: "🌐 Orca 觀光船官方網站",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/23993?cid=21657",
+            bookingLabel: "🎫 Orca 船票預訂 (NT$451)",
+            nextTransport: "🚗 開車 約 23 分鐘"
+          },
+          {
+            time: "12:48 ～ 17:48",
+            stay: "停留 5 小時",
+            name: "SAN-A 浦添西海岸 PARCO CITY",
+            category: "🛍️ 沖繩最大海景百貨",
+            area: "沖繩-浦添市",
+            ticketBadge: "🎫 免費入場＆免費停車",
+            address: "沖繩縣浦添市西洲3丁目1-1",
+            note: "全沖繩最大的臨海購物中心，集結 250 間店舖、藥妝、電器、超市與海景美食街。",
+            reminder: "買完戰利品可直接放進 ALPHARD 車廂，不用手提逛街！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=SAN-A浦添西海岸+PARCO+CITY",
+            officialUrl: "https://www.parcocity.jp.t.ahn.hp.transer.com/",
+            officialLabel: "🌐 PARCO CITY 繁中官網",
+            nextTransport: "🚗 開車 約 16 分鐘"
+          },
+          {
+            time: "18:04 ～ 18:34",
+            stay: "辦理入住 (第7晚)",
+            name: "JR九州Blossom飯店那霸 (JR九州ホテル ブラッサム那覇 / 櫻花酒店)",
+            category: "🏨 已確認四星級飯店",
+            area: "沖繩-那霸",
+            ticketBadge: "🏨 已付 NT$ 9,104 (2間)",
+            address: "16-1 Makishi 2-chome, 900-0013 那霸市, 沖繩縣",
+            note: "【PDF訂單已確認】高級雙床房・2間（26㎡，樓層 3-12，無餐點）｜已付款 TWD 9,104｜單號：1616334408335637｜PIN碼：9026",
+            reminder: "先讓媽媽與所有大行李在此下車進房休息，司機再開 7 分鐘去泉崎 BGA 還車！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=JR九州ホテル+ブラッサム那覇",
+            officialUrl: "https://www.jrk-hotels.co.jp/Naha/tw/",
+            officialLabel: "🌐 JR九州Blossom繁中官網",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=1846502&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結",
+            nextTransport: "🚗 開車 約 7 分鐘"
+          },
+          {
+            time: "18:41 ～ 19:00",
+            stay: "歸還 ALPHARD",
+            name: "BGAレンタカー 沖縄 BGA RENTAL CAR (加滿油還車)",
+            category: "🚐 租車歸還",
+            area: "沖繩-那霸",
+            address: "〒900-0021 沖繩縣那霸市泉崎1丁目9-23 レジデンシア泉崎 1階",
+            note: "歸還 TOYOTA ALPHARD，結束 6 天豪華自駕行程。",
+            reminder: "⚠️ 【營業提醒：19:00 打烊】！還車前請先加滿油，還完車散步或搭單軌回國際通與家人會合吃晚餐。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=BGAレンタカー+那覇市泉崎1-9-23",
+            officialUrl: "https://bga-rentalcar.com/",
+            officialLabel: "🌐 BGA 租車官方網站"
+          }
+        ]
+      },
+      {
+        day: 8,
+        date: "2027/01/28 (週四)",
+        title: "國際通悠閒慢遊・十割蕎麥麵、第一牧志公設市場、市場本通、晚班機返台",
+        summary: "JR九州Blossom飯店 (11:00退房寄行李) → 十割蕎麥麵 山樂 → 第一牧志公設市場 → 市場本通 → 飯店領行李 → 那霸機場 (20:10起飛)",
+        momTip: "👗 媽媽穿搭與體力建議：今天全部在飯店周邊步行 5～9 分鐘範圍內！退房後把行李寄放在飯店一樓，雙手空空去吃蕎麥麵、逛牧志公設市場，傍晚搭計程車 17 分鐘就到那霸機場搭 20:10 班機回台灣！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=JR+Kyushu+Hotel+Blossom+Naha&destination=Naha+Airport+International+Terminal&waypoints=Sanraku+Soba+Makishi+Naha|First+Makishi+Public+Market|Ichiba+Hondori",
+        dayReminder: "1. JR九州Blossom飯店退房時間為 11:00 前，退房後將行李箱寄放在櫃檯即可出門逛街。\n2. 【回程航班】長榮航空直飛：沖繩那霸 (OKA) 20:10 起飛 → 桃園 (TPE) 20:55 抵達。",
+        stops: [
+          {
+            time: "08:00 ～ 11:00",
+            stay: "睡飽退房＆寄行李",
+            name: "JR九州Blossom飯店那霸（退房並寄放行李）",
+            category: "🏨 退房寄行李",
+            area: "沖繩-那霸",
+            address: "沖繩縣那霸市牧志2丁目16-1",
+            note: "11:00 前退房，將行李寄放於一樓櫃檯，11:30 散步出發吃午餐。",
+            reminder: "液體、果凍與酒類請先收進託運行李箱。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=JR九州ホテル+ブラッサム那覇",
+            officialUrl: "https://www.jrk-hotels.co.jp/Naha/tw/",
+            officialLabel: "🌐 飯店繁中官網",
+            nextTransport: "🚶 步行 約 9 分鐘"
+          },
+          {
+            time: "11:39 ～ 12:39",
+            stay: "停留 1 小時",
+            name: "十割蕎麥麵 山樂 (十割そば 山楽)",
+            category: "🍜 古民家精緻蕎麥麵",
+            area: "沖繩-那霸",
+            address: "〒900-0013 沖繩縣那霸市牧志3丁目6-34",
+            note: "國際通巷弄內的日式庭園古民家餐廳，供應 100% 純蕎麥製成的「十割蕎麥麵」、現炸天婦羅與阿咕豬料理。",
+            reminder: "11:30 開門營業，環境清幽雅致。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=十割そば+山楽+那覇市牧志",
+            officialUrl: "https://okinawa-sanraku.com/",
+            officialLabel: "🌐 十割蕎麥麵山樂官網",
+            nextTransport: "🚶 步行 約 5 分鐘"
+          },
+          {
+            time: "12:44 ～ 13:44",
+            stay: "停留 1 小時",
+            name: "那霸市第一牧志公設市場",
+            category: "🦞 室內明亮公設市場",
+            area: "沖繩-那霸",
+            ticketBadge: "🎫 免費參觀",
+            address: "沖繩縣那霸市松尾2丁目10-1",
+            note: "全新改建的現代化室內市場，設有電扶梯與空調，一樓有海鮮、沖繩黑糖、海帶芽與辣油，二樓為食堂。",
+            reminder: "媽媽買乾貨、黑糖、海藻湯包最愛逛這裡！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=那覇市第一牧志公設市場",
+            officialUrl: "https://kosetsu-ichiba.com/zh-tw/",
+            officialLabel: "🌐 牧志公設市場繁中官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/572894?cid=21657",
+            bookingLabel: "👘 琉裝體驗參考",
+            nextTransport: "🚶 步行 約 1 分鐘"
+          },
+          {
+            time: "13:45 ～ 15:45",
+            stay: "停留 2 小時",
+            name: "市場本通 ＆ 國際通商店街",
+            category: "🛍️ 拱廊街最後採買",
+            area: "沖繩-那霸",
+            ticketBadge: "🎫 免費逛街",
+            address: "2 Chome-8 Matsuo, Naha, Okinawa 900-0014",
+            note: "有遮雨頂棚的拱廊商店街直通國際通，可買御菓子御殿紅芋塔、鹽屋雪鹽餅乾與各式伴手禮。",
+            reminder: "距離飯店僅步行 4 分鐘。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=那覇市市場本通り",
+            officialUrl: "https://naha-kokusaidori.okinawa/tw/",
+            officialLabel: "🌐 國際通官方中文網站",
+            nextTransport: "🚶 步行 約 4 分鐘"
+          },
+          {
+            time: "15:49 ～ 16:49",
+            stay: "領取行李出發機場",
+            name: "JR九州Blossom飯店那霸（領取行李）",
+            category: "🧳 領行李去機場",
+            area: "沖繩-那霸",
+            address: "沖繩縣那霸市牧志2丁目16-1",
+            note: "回飯店領取行李，請飯店櫃檯幫忙招呼計程車前往那霸機場。",
+            reminder: "搭計程車約 17 分鐘直達那霸機場國際線航廈。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=JR九州ホテル+ブラッサム那覇",
+            officialUrl: "https://www.jrk-hotels.co.jp/Naha/tw/",
+            officialLabel: "🌐 飯店官網",
+            nextTransport: "🚕 計程車直達 約 17 分鐘"
+          },
+          {
+            time: "17:06 ～ 20:10",
+            stay: "報到＆免稅店採買",
+            name: "那霸機場國際線航廈（長榮航空 20:10 OKA → 20:55 TPE）",
+            category: "✈️ 平安返台",
+            area: "沖繩-那霸",
+            address: "〒901-0142 沖繩縣那霸市鏡水150",
+            note: "長榮航空 20:10 直飛起飛，台灣時間 20:55 返抵桃園機場！",
+            reminder: "報到託運後，入關前也可先去國內線 2 樓大型伴手禮商場逛逛。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=那覇空港国際線ターミナル",
+            officialUrl: "https://www.naha-airport.co.jp/zh-hant/",
+            officialLabel: "🌐 那霸機場繁中官網",
+            bookingUrl: "https://www.chictrip.com.tw/blog/country/japan/nearme",
+            bookingLabel: "🚐 機場接送資訊"
+          }
+        ]
+      }
+    ];
+    // =====================================================
+    // 完整行程資料庫：九州溫泉之旅 (Day 1 ~ Day 7) - 全新重排版本
+    // =====================================================
+    const kyushuDays = [
+      {
+        day: 1,
+        date: "2027/01/21 (週四)",
+        title: "長榮直飛抵達福岡・10分鐘直達博多WBF格蘭德飯店",
+        summary: "桃園機場 (16:25起飛) → 福岡機場國際線 (19:55抵達) → 格蘭德博多WBF飯店",
+        momTip: "👗 媽媽穿搭與體力建議：福岡機場離博多市區超近！下飛機後在國際線一樓搭計程車只要 10 分鐘就到飯店，飯店頂樓還有大浴場可泡澡消除疲勞！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Fukuoka+Airport+International+Terminal&destination=Hotel+WBF+Grande+Hakata",
+        dayReminder: "1. 【航班確認】長榮航空直飛：桃園 (TPE) 16:25 起飛 → 福岡 (FUK) 19:55 抵達（4位大人總額 NT$ 100,084，每人含 2×23kg 託運行李）。\n2. 飯店距離明早博多站筑紫口取車處步行約 10～13 分鐘（或由司機先去取 ALPHARD 開回來載媽媽與行李）。",
+        stops: [
+          {
+            time: "19:55 ～ 20:55",
+            stay: "停留 1 小時",
+            name: "福岡機場國際線航廈（長榮航空 16:25 TPE → 19:55 FUK）",
+            category: "✈️ 機場抵達",
+            area: "九州-福岡",
+            ticketBadge: "✈️ 機票 NT$ 100,084 (4人)",
+            address: "福岡縣福岡市博多區下臼井778-1",
+            note: "【PDF機票已確認】長榮航空直飛班機，4 位成人（媽媽 TSAI HUI MEI、爸爸 CHANG SHUO HSUN、CHANG PO CHUN、弟弟 CHANG PO HSIANG）總價 TWD 100,084（每人 TWD 25,021）｜每人含手提 1×7kg ＋ 託運 2×23kg。",
+            reminder: "出關後一樓大廳外即是計程車招呼站，10 分鐘直達博多站南飯店。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=福岡空港国際線ターミナル",
+            officialUrl: "https://www.fukuoka-airport.jp/tw/",
+            officialLabel: "🌐 福岡機場繁中官網",
+            nextTransport: "🚕 計程車直達 約 10 分鐘"
+          },
+          {
+            time: "21:05 抵達",
+            stay: "入住休息 (第1晚)",
+            name: "格蘭德博多WBF飯店 (WBF格蘭德飯店 博多)",
+            category: "🏨 已確認住宿",
+            area: "九州-福岡",
+            ticketBadge: "🏨 已付 NT$ 4,934 (2間)",
+            address: "〒812-0016 福岡縣福岡市博多區博多站南2丁目2-5",
+            note: "【PDF訂單已確認】標準雙床房・2間（18㎡，無餐點，附設大浴場澡堂）｜已付款 TWD 4,934｜訂單號：1616334407287672｜PIN碼：5432",
+            reminder: "入住時間 15:00-00:00，隔日 11:00 前退房；2027/01/17 23:59 前免費取消。電話：+81-92-4524123。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ホテルWBFグランデ博多+福岡市博多区博多駅南2-2-5",
+            officialUrl: "https://www.google.com/search?q=ホテルWBFグランデ博多",
+            officialLabel: "🌐 飯店資訊查詢",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=4132009&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結"
+          }
+        ]
+      },
+      {
+        day: 2,
+        date: "2027/01/22 (週五)",
+        title: "取新款 ALPHARD 雪胎車・浮羽千本鳥居、九州自然動物公園、入住別府＆天丼名店",
+        summary: "博多退房 → 取新款 ALPHARD 雪胎車 → 浮羽稻荷神社 → 道之驛浮羽 → 九州自然動物公園 African Safari → Cocolie別府 → 天丼豐常本店 → MaxValu別府店",
+        momTip: "👗 媽媽穿搭與體力建議：今天開始搭乘指定新款「TOYOTA ALPHARD 阿爾法雪胎休旅車」！浮羽稻荷神社可直接開車停在上方停車場免爬坡，下午在自然動物公園直接開著阿爾法進去猛獸區看獅子與長頸鹿，媽媽坐在溫暖車內就能輕鬆看動物！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Hotel+WBF+Grande+Hakata&destination=MaxValu+Beppu&waypoints=Ukiha+Inari+Shrine|Michi+no+Eki+Ukiha|Kyushu+Natural+Animal+Park+African+Safari|Cocolie+Beppu|Toyotsune+Honten+Beppu",
+        dayReminder: "1. 【租車確認】PDF 第 1 頁為 WBSZ【New model】ALPHARD 指定雪胎車（含雪胎標準裝備＋ETC卡＋安心保險套餐，總計 ¥196,614 ≈ NT$ 42,272）。\n2. 15:22 先抵達「Cocolie 別府（40㎡ 三張雙人床大房型）」放行李休息，16:30 再開車 8 分鐘去吃百年名店「天丼豐常 本店」（避開尖峰時段不用排隊！）。",
+        stops: [
+          {
+            time: "08:00 ～ 08:40",
+            stay: "40 分鐘",
+            name: "格蘭德博多WBF飯店（退房出發）",
+            category: "🏨 退房出發",
+            area: "九州-福岡",
+            address: "福岡縣福岡市博多區博多站南2丁目2-5",
+            note: "整理行李退房，步行前往博多站東側/筑紫口取車（或由司機先走去取車再開回飯店接媽媽）。",
+            reminder: "請確認攜帶台灣駕照正本、日文譯本、護照與信用卡。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ホテルWBFグランデ博多",
+            officialUrl: "https://www.google.com/search?q=ホテルWBFグランデ博多",
+            officialLabel: "🌐 飯店資訊",
+            nextTransport: "🚶 步行 約 13 分鐘"
+          },
+          {
+            time: "08:53 ～ 09:23",
+            stay: "停留 30 分鐘",
+            name: "Avis / Budget Car Rental (駅レンタカー博多站筑紫口店・取新款 ALPHARD 雪胎車)",
+            category: "🚐 新款阿爾法取車",
+            area: "九州-福岡",
+            ticketBadge: "🚐 6日雪胎阿爾法 ¥196,614 (約NT$ 42,272)",
+            address: "1 Chome-18-10 Hakataekihigashi, Hakata Ward, Fukuoka, 812-0013 (博多站筑紫口)",
+            note: "【PDF租車單已確認】車款：WBSZ【New model】ALPHARD designation Studless car（新款阿爾法指定雪胎車）｜租期：2027/01/22 08:00 ～ 01/27 20:00（132小時）｜包含：雪胎標準裝備 ＋ ETC卡(330円) ＋ 安心保險套餐(28,380円)｜總計：JPY 196,614 含稅（約 NT$ 42,272，於店鋪刷卡支付）。",
+            reminder: "⚠️ 注意：PDF 租車單目前顯示於步驟 05「確認畫面（預約尚未完成，請點選下一頁完成申請）」，出發前請確認已收到最終預約番號信件！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=1-18-10+Hakataekihigashi+Hakata+Ward+Fukuoka",
+            officialUrl: "https://www.budgetrentacar.co.jp/zh/",
+            officialLabel: "🌐 租車公司繁中官網",
+            nextTransport: "🚗 開車 約 61 分鐘"
+          },
+          {
+            time: "10:24 ～ 10:54",
+            stay: "停留 30 分鐘",
+            name: "浮羽稻荷神社 (浮羽稲荷神社)",
+            category: "⛩️ 91座千本鳥居絕景",
+            area: "九州-福岡",
+            ticketBadge: "🎫 免費參拜",
+            address: "福岡縣浮羽市浮羽町流川1513-9",
+            note: "位於山坡上的絕景神社，坐擁筑後平原美景，91 座朱紅色鳥居連綿而下。",
+            reminder: "💡 省力秘訣：直接將阿爾法開上「神社上方的上宮停車場」，下車走幾步路就能站在最高處往下拍千本鳥居與平原全景，媽媽完全不用爬階梯！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=浮羽稲荷神社+福岡県うきは市",
+            officialUrl: "https://ukihalove.jp/contents/ukihainari/",
+            officialLabel: "🌐 浮羽市觀光協會介紹",
+            nextTransport: "🚗 開車 約 11 分鐘"
+          },
+          {
+            time: "11:05 ～ 11:25",
+            stay: "停留 20 分鐘",
+            name: "道之驛 浮羽 (道の駅 うきは)",
+            category: "🍓 九州冠軍休息站",
+            area: "九州-福岡",
+            ticketBadge: "🎫 免費入場",
+            address: "福岡縣うきは市浮羽町山北729-2",
+            note: "蟬聯九州滿意度第一的農產休息站，可買剛採收的福岡甘王草莓、手工麵包與點心在車上享用。",
+            reminder: "木造建築後方有觀景露台與乾淨洗手間。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=道の駅うきは+福岡県",
+            officialUrl: "http://www.michinoeki-ukiha.com/",
+            officialLabel: "🌐 道之驛浮羽官方網站",
+            nextTransport: "🚗 開車 約 1 小時 26 分 (86分鐘)"
+          },
+          {
+            time: "12:51 ～ 14:51",
+            stay: "停留 2 小時",
+            name: "九州自然動物公園 African Safari",
+            category: "🦁 野生動物獵遊",
+            area: "九州-大分",
+            ticketBadge: "🎫 門票：¥2,600/人 (4人約 NT$ 2,236)",
+            address: "〒872-0722 大分縣宇佐市安心院町南畑2-1755-1",
+            note: "這座獵遊風格的動物園內有許多異國動物，可直接開著我們的 ALPHARD 休旅車穿梭在獅子、長頸鹿、白犀牛、大象與黑熊之間，也能換搭園內「叢林巴士 (¥1,500/人)」親手餵食猛獸！",
+            reminder: "園區內設有餐廳與可愛袋鼠、迷你馬互動區，媽媽坐在車裡吹暖氣看動物超輕鬆！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=九州自然動物公園アフリカンサファリ",
+            officialUrl: "https://africansafari.co.jp/chinese-t/",
+            officialLabel: "🌐 九州自然動物公園繁中官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/529523?cid=21657",
+            bookingLabel: "🎫 動物園行程參考",
+            nextTransport: "🚗 開車 約 31 分鐘"
+          },
+          {
+            time: "15:22 ～ 16:22",
+            stay: "辦理入住 (第2晚)",
+            name: "可可莉別府飯店 (Cocolie 別府 / ココリエ別府)",
+            category: "🏨 已確認寬敞住宿",
+            area: "九州-大分",
+            ticketBadge: "🏨 已付 NT$ 4,163 (3張雙人床)",
+            address: "1-1番29号 Shiomicho, 874-0918 別府市, 大分縣",
+            note: "【PDF訂單已確認】高級a型房-無煙・1間（配有 3 張雙人床，可住 6 人，40 平方公尺大空間，無餐點）｜已付款 TWD 4,163｜單號：1616334495924499｜PIN碼：3966",
+            reminder: "15:00 後可入住，隔日 10:00 前退房；2027/01/19 23:59 前免費取消。先回飯店放行李休息一下，16:30 出門吃晚餐！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Cocolie+別府+大分県別府市汐見町1-1-29",
+            officialUrl: "https://www.google.com/search?q=Cocolie+Beppu+別府",
+            officialLabel: "🌐 飯店資訊查詢",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=14379239&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結",
+            nextTransport: "🚗 開車 約 8 分鐘"
+          },
+          {
+            time: "16:30 ～ 17:30",
+            stay: "停留 1 小時",
+            name: "天丼豐常 本店 (とよ常 本店)",
+            category: "🍤 別府第一天丼名店",
+            area: "九州-大分",
+            address: "大分縣別府市北濱2丁目12-24",
+            note: "別府超人氣百年名店！招牌「特上天丼」炸大蝦酥脆金黃，還有大分鄉土料理「琉球（漬生魚片）」與炸雞天婦羅（とり天）。",
+            reminder: "⚠️ 天丼豐常本店晚間時段為【17:00 開始營業】（午間為 11:00-14:00），16:30 抵達可先在店外專用停車場停車並抽取第一輪號碼牌，17:00 一開門馬上入座不用排隊！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=とよ常+本店+別府",
+            officialUrl: "https://www.toyotsune.com/",
+            officialLabel: "🌐 天丼豐常官方網站",
+            nextTransport: "🚗 開車 約 6 分鐘"
+          },
+          {
+            time: "17:36 ～ 18:36",
+            stay: "停留 1 小時",
+            name: "MaxValu 別府店",
+            category: "🛒 大型超市採買",
+            area: "九州-大分",
+            address: "大分縣別府市新港町4番39號",
+            note: "飯後逛日本在地大型超市，採買隔天早餐麵包、鮮奶、優格與水果回 Cocolie 別府飯店享用。",
+            reminder: "24 小時營業，平面停車場超大好停！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=マックスバリュ+別府店",
+            officialUrl: "https://www.aeonkyushu.com.tw/",
+            officialLabel: "🌐 AEON MaxValu 官網"
+          }
+        ]
+      },
+      {
+        day: 3,
+        date: "2027/01/23 (週六)",
+        title: "大分海之卵水族館、南阿蘇鐵道小火車、珍藏草莓園採果、白水溫泉竹之倉山莊一泊二食",
+        summary: "別府出發 → 大分海洋宮殿水族館 海之卵 → 南阿蘇鐵道小火車「Yusuge號」 → 終於找到的珍藏草莓園 → 白水溫泉 竹之倉山莊 (一泊二食)",
+        momTip: "👗 媽媽穿搭與體力建議：早上海之卵水族館看超可愛的海象表演；下午搭南阿蘇觀光小火車、去南阿蘇草莓園現採日本大草莓，16:30 就提早入住「白水溫泉 竹之倉山莊」升級版 36㎡ 附樓雙床房，泡美肌溫泉、吃一泊二食懷石大餐！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Cocolie+Beppu&destination=Takenokurasanso+Minamiaso&waypoints=Umitamago+Aquarium+Oita|Takamori+Station+Kumamoto|Minamiaso+Strawberry",
+        dayReminder: "1. ✨ 今晚「白水溫泉 竹之倉山莊」您升級訂了「附樓雙床房-帶浴室・2間（36㎡大空間，TWD 22,266）」，含 1/23 晚餐 4 客 ＋ 1/24 早餐 4 客！\n2. 16:30 抵達溫泉旅館時間非常充裕（入住時間為 15:00-20:00），可以先泡個露天風呂再吃懷石晚餐！",
+        stops: [
+          {
+            time: "08:00 ～ 09:00",
+            stay: "1 小時",
+            name: "可可莉別府飯店（退房出發）",
+            category: "🏨 退房出發",
+            area: "九州-大分",
+            address: "大分縣別府市汐見町1-1-29",
+            note: "10:00 前退房，沿別府灣海岸線開往海之卵水族館。",
+            reminder: "車程僅 13 分鐘。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Cocolie+別府",
+            officialUrl: "https://www.google.com/search?q=Cocolie+Beppu",
+            officialLabel: "🌐 飯店資訊",
+            nextTransport: "🚗 開車 約 13 分鐘"
+          },
+          {
+            time: "09:13 ～ 12:13",
+            stay: "停留 3 小時",
+            name: "大分海洋宮殿水族館「海之卵」(うみたまご)",
+            category: "🐬 零距離海洋公園",
+            area: "九州-大分",
+            ticketBadge: "🎫 門票：NT$ 584/人 (4人 NT$ 2,336)",
+            address: "〒870-0802 大分縣大分市神崎3078-22",
+            note: "面臨別府灣的大型海洋公園與水族館，舉辦精彩逗趣的海象與海豚表演，以及能與海洋生物互動的開放式海灘區。",
+            reminder: "進場先看海象表演時刻表，表演區有舒適看台座位。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=大分マリーンパレス水族館+うみたまご",
+            officialUrl: "https://www.umitamago.jp/",
+            officialLabel: "🌐 海之卵水族館官方網站",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/279334?cid=21657",
+            bookingLabel: "🎫 海之卵優惠門票 (NT$584)",
+            nextTransport: "🚗 開車 約 1 小時 55 分 (115分鐘)"
+          },
+          {
+            time: "14:08 ～ 15:08",
+            stay: "停留 1 小時",
+            name: "南阿蘇鐵道 高森站・小火車「Yusuge號 (ゆうすげ号)」",
+            category: "🚂 阿蘇山景鐵道",
+            area: "九州-熊本",
+            ticketBadge: "🎫 乘車券預估：¥1,380/人 (4人約 NT$ 1,187)",
+            address: "熊本縣阿蘇郡高森町高森1537-2",
+            note: "全線復駛的南阿蘇鐵道！高森站外有著名的航海王「佛朗基銅像」與全新木造車站。",
+            reminder: "冬季期間可於下方官網查看當日觀光小火車或航海王彩繪列車時刻表。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=南阿蘇鉄道+高森駅",
+            officialUrl: "https://www.mt-torokko.com/",
+            officialLabel: "🌐 南阿蘇鐵道官方網站",
+            nextTransport: "🚗 開車 約 11 分鐘"
+          },
+          {
+            time: "15:19 ～ 16:19",
+            stay: "停留 1 小時",
+            name: "終於找到的珍藏草莓園 (やっと見つけた とっておきのイチゴ畑)",
+            category: "🍓 南阿蘇溫室採草莓",
+            area: "九州-熊本",
+            ticketBadge: "🎫 採果體驗預估：約 ¥2,200/人 (4人約 NT$ 1,892)",
+            address: "熊本縣阿蘇郡南阿蘇村兩併281",
+            note: "位於阿蘇山腳下純淨水源培育的溫室草莓園！1 月份正是熊本草莓（Yuubeni 熊紅草莓、戀實草莓）最香甜多汁的產季，溫室高架栽培不用彎腰就能輕鬆採草莓！",
+            reminder: "溫室內溫暖無風，高架草莓園讓媽媽站著就能輕鬆剪草莓拍照！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=やっと見つけたとっておきのイチゴ畑+南阿蘇村両併281",
+            officialUrl: "https://www.google.com/search?q=%E3%82%84%E3%81%A3%E3%81%A8%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%9F%E3%81%A8%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%AE%E3%82%A4%E3%83%81%E3%82%B4%E7%95%91+%E5%8D%97%E9%98%BF%E8%98%87",
+            officialLabel: "🌐 草莓園資訊查詢",
+            nextTransport: "🚗 開車 約 11 分鐘"
+          },
+          {
+            time: "16:30 抵達",
+            stay: "入住一泊二食名湯 (第3晚)",
+            name: "白水溫泉 竹之倉山莊 (Takenokurasanso / 竹の倉山荘)",
+            category: "♨️ 已確認升級版一泊二食",
+            area: "九州-熊本",
+            ticketBadge: "🏨 已付 NT$ 22,266 (含早晚餐各4客)",
+            address: "〒869-1505 熊本縣阿蘇郡南阿蘇村大字中松2065",
+            note: "【PDF訂單已確認】附樓雙床房-帶浴室・2間（36㎡寬敞附樓房型）｜含 1/23 晚餐 4 客 ＋ 1/24 早餐 4 客（一泊二食）｜已付款 TWD 22,266｜單號：1616334495941283｜PIN碼：7718",
+            reminder: "✨ 入住時間 15:00-20:00，隔日 11:00 前退房；2027/01/17 17:00 前免費取消。16:30 提早抵達可以悠閒泡自家源泉美肌露天風呂，再享用阿蘇赤牛會席晚餐！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=白水温泉+竹の倉山荘+南阿蘇",
+            officialUrl: "https://www.takenokura.co.jp/",
+            officialLabel: "🌐 竹之倉山莊官方網站"
+          }
+        ]
+      },
+      {
+        day: 4,
+        date: "2027/01/24 (週日)",
+        title: "上色見熊野座神社、阿蘇山草千里、熊本城＆城彩苑、上下通美食巡禮、入住星野集團 OMO5 熊本",
+        summary: "竹之倉山莊早餐 → 上色見熊野座神社 → 阿蘇山上廣場 → 草千里之濱 → 熊本城＆城彩苑 → 蜂樂饅頭 → 浪花お好み焼き → Love Love Global Kikuchi → OMO5 熊本 by 星野集團",
+        momTip: "👗 媽媽穿搭與體力建議：早上去阿蘇山看壯觀草原，下午進熊本市區逛熊本城（有電梯與無障礙長廊）與城彩苑古街，晚上住星野集團超有質感的「OMO5 熊本」，下樓走幾步就是上通、下通商店街吃蜂樂饅頭與逛街！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=Takenokurasanso+Minamiaso&destination=OMO5+Kumamoto+by+Hoshino+Resorts&waypoints=Kamishikimi+Kumanoimasu+Shrine|Kusasenri+Aso|Kumamoto+Castle|Sakuranobaba+Josaien",
+        dayReminder: "1. 下午去熊本城時，除了停在安政町停車場步行前往外，也可以直接將車開去停在「熊本城 二之丸停車場 / 城彩苑停車場」，這樣媽媽逛完熊本城與城彩苑不用走 20 分鐘回市區取車，直接開車 7 分鐘就能到上通/OMO5 熊本飯店喔！\n2. ⚠️ 第 10 站「Love Love Global Kikuchi 下通店（名牌精品百貨）」營業提醒為【20:00 打烊】，若想逛精品可與晚餐順序對調（先逛到 20:00 再吃晚餐）！",
+        stops: [
+          {
+            time: "08:00 ～ 10:00",
+            stay: "2 小時 (含4客早餐)",
+            name: "白水溫泉 竹之倉山莊（享用日式早餐＆退房）",
+            category: "🍳 旅館早餐＆退房",
+            area: "九州-熊本",
+            address: "熊本縣阿蘇郡南阿蘇村大字中松2065",
+            note: "享用訂單包含的 4 客日式溫泉早餐，泡完晨湯後於 10:00 退房出發。",
+            reminder: "退房上限為 11:00 前。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=白水温泉+竹の倉山荘",
+            officialUrl: "https://www.takenokura.co.jp/",
+            officialLabel: "🌐 竹之倉山莊官網",
+            nextTransport: "🚗 開車 約 17 分鐘"
+          },
+          {
+            time: "10:17 ～ 11:17",
+            stay: "停留 1 小時",
+            name: "上色見熊野座神社 (含參拜者停車場)",
+            category: "⛩️ 杉木林石燈籠秘境",
+            area: "九州-熊本",
+            ticketBadge: "🎫 免費參拜",
+            address: "熊本縣阿蘇郡高森町上色見2619",
+            note: "杉木森林中近百座青苔石燈籠沿參道排列，陽光灑落時宛如動畫秘境。",
+            reminder: "媽媽在前中段平緩的石燈籠參道與本殿拍照就非常有氣氛，不必勉強爬最後的陡坡。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=上色見熊野座神社+熊本",
+            officialUrl: "https://kumamoto.guide/tw/spots/detail/12156",
+            officialLabel: "🌐 熊本觀光局中文介紹",
+            nextTransport: "🚗 開車 約 32 分鐘"
+          },
+          {
+            time: "11:49 ～ 12:19",
+            stay: "停留 30 分鐘",
+            name: "阿蘇山上廣場 (阿蘇山上ターミナル)",
+            category: "🌋 活火山口門戶",
+            area: "九州-熊本",
+            ticketBadge: "🎫 廣場免費 (上火山口過路費 ¥1,000/車)",
+            address: "熊本縣南阿蘇村黑川808",
+            note: "前往阿蘇中岳火山口的前哨休息站，若當日火山氣體濃度正常開放，可順道開上火山口觀景。",
+            reminder: "可點下方官網即時查看當日火山口開放狀態。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=阿蘇山上ターミナル",
+            officialUrl: "https://www.aso-volcano.jp/",
+            officialLabel: "🌐 阿蘇火山口即時開放查詢",
+            nextTransport: "🚗 開車 約 5 分鐘"
+          },
+          {
+            time: "12:24 ～ 13:24",
+            stay: "停留 1 小時",
+            name: "草千里之濱 (草千里ヶ浜)",
+            category: "🐎 火山高原大草原",
+            area: "九州-熊本",
+            ticketBadge: "🎫 景觀免費 (停車費 ¥500/車)",
+            address: "熊本縣阿蘇市草千里之濱",
+            note: "綠草如茵的恬靜高原，可飽覽日本最大活火山阿蘇山的美景，旁有景觀餐廳與草千里咖啡館。",
+            reminder: "可在景觀餐廳享用阿蘇赤牛料理或喝杯熱咖啡後下山前往熊本市區。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=草千里ヶ浜+阿蘇",
+            officialUrl: "https://newkusasenri.com/",
+            officialLabel: "🌐 草千里景觀餐廳官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/285420?cid=21657",
+            bookingLabel: "🎫 阿蘇行程參考",
+            nextTransport: "🚗 開車 約 1 小時 12 分 (72分鐘)"
+          },
+          {
+            time: "14:36 ～ 14:46",
+            stay: "停車 10 分鐘",
+            name: "Times 安政町通停車場 (タイムズ安政町通り)",
+            category: "🅿️ 市區停車場",
+            area: "九州-熊本",
+            address: "熊本縣熊本市中央區安政町 2-19",
+            note: "位於熊本下通商圈與 OMO5 飯店附近的平面停車場。",
+            reminder: "💡 貼心建議：若不想讓媽媽走 20 分鐘去熊本城，也可以直接把車開到「熊本城 城彩苑/二之丸停車場」停放，逛完熊本城跟城彩苑後再開回安政町停車逛街喔！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=タイムズ安政町通り+熊本市中央区安政町2-19",
+            officialUrl: "https://times-info.net/",
+            officialLabel: "🌐 Times 停車場查詢",
+            nextTransport: "🚶 步行 約 20 分鐘 (或直接開車至城彩苑)"
+          },
+          {
+            time: "15:06 ～ 16:36",
+            stay: "停留 1 小時 30 分",
+            name: "熊本城天守閣",
+            category: "🏯 日本三大名城",
+            area: "九州-熊本",
+            ticketBadge: "🎫 門票：¥800/人 (4人約 NT$ 688)",
+            address: "〒860-0002 熊本縣熊本市中央區本丸1-1",
+            note: "重建完成的日本三大名城！設有全程無障礙「空中觀景長廊」與天守閣內部電梯，長輩參觀非常輕鬆。",
+            reminder: "天守閣頂樓可俯瞰整個熊本市區與遠方的阿蘇山。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=熊本城",
+            officialUrl: "https://castle.kumamoto-guide.jp/tw/",
+            officialLabel: "🌐 熊本城繁中官方網站",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/634660?cid=21657",
+            bookingLabel: "🎫 熊本一日遊參考",
+            nextTransport: "🚶 步行 約 5 分鐘"
+          },
+          {
+            time: "16:41 ～ 17:41",
+            stay: "停留 1 小時",
+            name: "櫻之馬場 城彩苑",
+            category: "🍡 江戶城下町古街",
+            area: "九州-熊本",
+            ticketBadge: "🎫 免費入場",
+            address: "〒860-0008 熊本縣熊本市中央區二之丸1-1-2",
+            note: "熊本城山腳下的江戶風情美食街，必吃菅乃屋馬肉可樂餅、天草海膽可樂餅、現炸芥末蓮藕與抹茶霜淇淋。",
+            reminder: "有許多熊本限定伴手禮店與休息長椅。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=桜の馬場+城彩苑+熊本",
+            officialUrl: "https://www.sakuranobaba-johsaien.jp/traditional_chinese/",
+            officialLabel: "🌐 城彩苑繁體中文官網",
+            nextTransport: "🚗 開車/電車 約 7 分鐘"
+          },
+          {
+            time: "17:48 ～ 18:08",
+            stay: "停留 20 分鐘",
+            name: "蜂樂饅頭 熊本上通店 (蜂楽饅頭)",
+            category: "🥞 熊本70年排隊甜點",
+            area: "九州-熊本",
+            address: "熊本縣熊本市中央區上通町5-4",
+            note: "熊本家喻戶曉的 70 年老字號紅豆餅（今川燒）！使用日本國產蜂蜜製作外皮，內餡有綿密飽滿的黑豆沙與白豆沙兩種口味，每個只要銅板價！",
+            reminder: "⚠️ 蜂樂饅頭上通店通常於【18:00～18:30 售完打烊】，17:48 抵達剛剛好買到熱騰騰出爐的招牌白豆沙與黑豆沙！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=蜂楽饅頭+熊本上通店",
+            officialUrl: "https://www.houraku.co.jp/",
+            officialLabel: "🌐 蜂樂饅頭官方網站",
+            nextTransport: "🚶 步行 約 8 分鐘"
+          },
+          {
+            time: "18:16 ～ 19:46",
+            stay: "停留 1 小時 30 分",
+            name: "浪花 (お好み焼き 大文字 / なにわ 熊本下通)",
+            category: "🥘 鐵板燒＆大阪燒晚餐",
+            area: "九州-熊本",
+            address: "熊本縣熊本市中央區下通1-6-18",
+            note: "位於熊本熱鬧的下通商店街內的在地美食餐廳，享用熱騰騰的日式料理與鐵板美食。",
+            reminder: "若媽媽想先逛隔壁 20:00 打烊的 Love Love 精品店，也可以先逛完再過來吃晚餐！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=熊本県熊本市中央区下通1-6-18+浪花",
+            officialUrl: "https://www.google.com/search?q=%E7%86%8A%E6%9C%AC%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8D%80%E4%B8%8B%E9%80%9A1-6-18+%E6%B5%AA%E8%8A%B1",
+            officialLabel: "🌐 餐廳資訊查詢",
+            nextTransport: "🚶 步行 約 4 分鐘"
+          },
+          {
+            time: "19:50 ～ 20:50",
+            stay: "停留 1 小時",
+            name: "Love Love Global Kikuchi 下通店 (ブランドショップ ラブラブ)",
+            category: "👜 日本精品免稅店",
+            area: "九州-熊本",
+            address: "熊本縣熊本市中央區安政町1-25 石澤大樓1樓",
+            note: "熊本下通知名的國際精品、名牌包款、珠寶腕錶與美妝雜貨選品店。",
+            reminder: "⚠️ 【營業提醒：20:00 打烊】！因為 19:50 抵達只剩 10 分鐘就打烊，強烈建議把這站跟上一站「浪花晚餐」順序對調（18:15 先逛 Love Love 精品店，19:00 再去吃晚餐）！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=熊本市中央区安政町1-25+Love+Love",
+            officialUrl: "https://www.lovelove-group.com/",
+            officialLabel: "🌐 LoveLove 官方網站",
+            nextTransport: "🚶 步行 約 2 分鐘"
+          },
+          {
+            time: "20:52 抵達",
+            stay: "入住星野集團飯店 (第4晚)",
+            name: "OMO5 熊本 by 星野集團 (OMO5熊本 by 星野リゾート)",
+            category: "🏨 已確認星野集團飯店",
+            area: "九州-熊本",
+            ticketBadge: "🏨 已付 NT$ 4,964 (2間)",
+            address: "5-1 Tetorihon-cho, 中央區, 860-0808 熊本市 (手取本町5-1 HAB@ 3F)",
+            note: "【PDF訂單已確認】UTSUWA 雙床房・2間（21-24㎡，無餐點）｜已付款 TWD 4,964｜訂單號：1616334495984350｜PIN碼：6053",
+            reminder: "✨ 星野集團最新打造的熊本城市觀光飯店！3 樓「凹凸露台」可直接眺望熊本城夜景，樓下 HAB@ 商場與下通藥妝街走路 1 分鐘就到！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=OMO5熊本+by+星野リゾート",
+            officialUrl: "https://hoshinoresorts.com/zh_tw/hotels/omo5kumamoto/",
+            officialLabel: "🌐 星野 OMO5 熊本繁中官網",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=37121852&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結"
+          }
+        ]
+      },
+      {
+        day: 5,
+        date: "2027/01/25 (週一)",
+        title: "水鄉柳川暖桌遊船＆百年蒸籠鰻魚飯、太宰府天滿宮＆星巴克、LaLaport福岡、入住藥院",
+        summary: "OMO5熊本退房 → 柳川遊船伯舟觀光 → 皿屋福柳(蒸籠鰻魚飯) → 太宰府天滿宮＆星巴克 → LaLaport福岡 → YADO/Re藥院",
+        momTip: "👗 媽媽穿搭與體力建議：今天先搭柳川冬季限定的「暖桌木船（こたつ舟）」，下船剛好 11:20 第一批走進百年老店「皿屋福柳」吃熱騰騰的蒸籠鰻魚飯，下午逛太宰府與 LaLaport 百貨，行程節奏完美！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=OMO5+Kumamoto+by+Hoshino+Resorts&destination=1-1-28+Shirogane+Chuo+Ward+Fukuoka&waypoints=Yanagawa+River+Cruise+Hakushu|Saraya+Fukaryu+Yanagawa|Dazaifu+Tenmangu|LaLaport+Fukuoka",
+        dayReminder: "1. 先搭船再吃鰻魚飯的時間安排超讚！11:20 抵達「皿屋 福柳」剛好避開中午排隊人潮。\n2. 今晚入住福岡市中心「YADO/Re 藥院（40㎡ 豪華雙床房）」，周邊有超多高質感咖啡廳與藥院美食！",
+        stops: [
+          {
+            time: "08:00 ～ 08:30",
+            stay: "30 分鐘",
+            name: "OMO5 熊本 by 星野集團（退房出發）",
+            category: "🏨 退房出發",
+            area: "九州-熊本",
+            address: "熊本縣熊本市中央區手取本町5-1",
+            note: "08:30 退房，搭乘舒適的 ALPHARD 北上前往水鄉柳川。",
+            reminder: "可在飯店樓下便利商店或星野咖啡廳買早餐在車上享用。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=OMO5熊本+by+星野リゾート",
+            officialUrl: "https://hoshinoresorts.com/zh_tw/hotels/omo5kumamoto/",
+            officialLabel: "🌐 OMO5 熊本官網",
+            nextTransport: "🚗 開車 約 1 小時 14 分 (74分鐘)"
+          },
+          {
+            time: "09:44 ～ 11:10",
+            stay: "停留約 1 小時 26 分",
+            name: "柳川遊船 伯舟觀光 (柳川川下り 伯舟観光)",
+            category: "🚣 冬季限定暖桌扁舟",
+            area: "九州-福岡",
+            ticketBadge: "🎫 船票預估：約 NT$ 390/人 (4人 NT$ 1,560)",
+            address: "福岡縣柳川市彌四郎町10-1",
+            note: "搭乘傳統搖櫓木船漫遊柳川古運河，冬季船上配備溫暖的「日式暖桌 (こたつ舟)」，媽媽把腳伸進被爐裡邊聽船夫唱民謠超舒服！",
+            reminder: "去趣筆記已附 Klook 柳川遊船預訂連結，可直接點擊下方按鈕開啟。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=柳川川下り+伯舟観光",
+            officialUrl: "https://www.hakusyu.org/",
+            officialLabel: "🌐 伯舟觀光官方網站",
+            bookingUrl: "https://www.klook.com/zh-TW/activity/132921-yanagawa-river-cruise-experience-by-hakushu-kanko/",
+            bookingLabel: "🎫 Klook 柳川遊船預訂",
+            nextTransport: "🚶 步行 約 10 分鐘"
+          },
+          {
+            time: "11:20 ～ 12:50",
+            stay: "停留 1 小時 30 分",
+            name: "皿屋 福柳 (さらや福柳・柳川蒸籠鰻魚飯)",
+            category: "🍱 百年鰻魚飯名店",
+            area: "九州-福岡",
+            address: "福岡縣柳川市沖端町29-1",
+            note: "柳川逾百年老字號料理亭，必吃名物「蒸籠鰻魚飯 (うなぎのせいろ蒸し)」，蒲燒醬汁滲入米飯與金絲蛋絲再入竹籠熱蒸，香氣四溢！",
+            reminder: "11:00 開門，11:20 抵達剛好第一輪入座不用等！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=さらや福柳+柳川市沖端町29-1",
+            officialUrl: "https://tabelog.com/tw/fukuoka/A4008/A400806/40002016/",
+            officialLabel: "🌐 Tabelog 餐廳介紹",
+            nextTransport: "🚗 開車 約 1 小時 7 分 (67分鐘)"
+          },
+          {
+            time: "13:57 ～ 14:17",
+            stay: "停車 20 分鐘",
+            name: "太宰府停車場 (太宰府駐車センター)",
+            category: "🅿️ 停車場",
+            area: "九州-福岡",
+            ticketBadge: "🅿️ 停車費 ¥500/車 (約 NT$ 108)",
+            address: "〒818-0117 福岡縣太宰府市宰府3丁目3-7",
+            note: "停妥 ALPHARD 後步行 4 分鐘進入太宰府表參道。",
+            reminder: "平面大型車位好停。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=太宰府駐車センター+福岡県太宰府市宰府3-3-7",
+            officialUrl: "https://www.dazaifutenmangu.or.jp/tw/",
+            officialLabel: "🌐 太宰府交通指南",
+            nextTransport: "🚶 步行 約 4 分鐘"
+          },
+          {
+            time: "14:21 ～ 15:51",
+            stay: "停留 1 小時 30 分",
+            name: "太宰府天滿宮",
+            category: "⛩️ 賞梅與祈福名社",
+            area: "九州-福岡",
+            ticketBadge: "🎫 免費參拜",
+            address: "福岡縣太宰府市宰府4丁目7-1",
+            note: "全國天滿宮總本社，1月下旬院內早梅綻放，並可欣賞藤本壯介設計的限定版「森林屋頂臨時本殿」，表參道必吃現烤梅枝餅。",
+            reminder: "全程平地好走，對媽媽雙腳零負擔。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=太宰府天満宮",
+            officialUrl: "https://www.dazaifutenmangu.or.jp/tw/",
+            officialLabel: "🌐 太宰府天滿宮繁中官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/21437?cid=21657",
+            bookingLabel: "🎫 太宰府套票參考",
+            nextTransport: "🚶 步行 約 4 分鐘"
+          },
+          {
+            time: "15:55 ～ 16:25",
+            stay: "停留 30 分鐘",
+            name: "星巴克 太宰府天滿宮表參道店",
+            category: "☕ 隈研吾木構建築",
+            area: "九州-福岡",
+            address: "福岡縣太宰府市宰府3-2-43",
+            note: "建築大師隈研吾以 2,000 根杉木交織設計的特色星巴克，買杯熱飲休息一下。",
+            reminder: "就在回停車場的表參道上。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=スターバックスコーヒー+太宰府天満宮表参道店",
+            officialUrl: "https://store.starbucks.co.jp/detail-1058/",
+            officialLabel: "🌐 星巴克太宰府店官網",
+            nextTransport: "🚗 開車 約 25 分鐘"
+          },
+          {
+            time: "16:50 ～ 18:50",
+            stay: "停留 2 小時",
+            name: "三井購物園區 LaLaport 福岡 (停北B立體停車場)",
+            category: "🤖 實物大鋼彈＆大型百貨",
+            area: "九州-福岡",
+            ticketBadge: "🎫 免費入場",
+            address: "福岡縣福岡市博多區那珂6丁目23-1",
+            note: "門口矗立 24.8 公尺高 1:1 巨型 ν鋼彈（夜間整點有燈光秀），館內有久原本家茅乃舍高湯、Lopia 大型超市、藥妝與美食街。",
+            reminder: "可在館內三樓美食街或一樓餐廳享用晚餐並採買伴手禮。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ららぽーと福岡+LaLaport+Fukuoka",
+            officialUrl: "https://mitsui-shopping-park.com/lalaport/fukuoka/tw/",
+            officialLabel: "🌐 LaLaport 福岡繁中官網",
+            nextTransport: "🚗 開車 約 17 分鐘"
+          },
+          {
+            time: "19:07 抵達",
+            stay: "入住寬敞家庭房 (第5晚)",
+            name: "YADO/Re 藥院 (YADO/Re 薬院)",
+            category: "🏨 已確認40㎡高樓層住宿",
+            area: "九州-福岡",
+            ticketBadge: "🏨 已付 NT$ 7,545 (1間4人)",
+            address: "1-1-28 Shirogane, 中央區, 810-0012 福岡市 (福岡市中央區白金1-1-28)",
+            note: "【PDF訂單已確認】豪華雙床房・1間（2張雙人床，住 4 位成人，40 平方公尺寬敞空間，位於高樓層 8-10 樓，無餐點）｜已付款 TWD 7,545｜單號：1616334495889872｜PIN碼：4464",
+            reminder: "15:00 後入住，隔日 11:00 前退房（抵達時依人數收取福岡市住宿稅 200円/人）。電話：+81-50-17228507。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=1-1-28+Shirogane+Chuo+Ward+Fukuoka+YADO+Re",
+            officialUrl: "https://www.google.com/search?q=YADO%2FRe+%E8%96%AC%E9%99%A2+%E7%A6%8F%E5%B2%A1",
+            officialLabel: "🌐 飯店資訊查詢"
+          }
+        ]
+      },
+      {
+        day: 6,
+        date: "2027/01/26 (週二)",
+        title: "櫛田神社、壹岐神社海邊鳥居、teamLab、暖暮拉麵、三麗鷗樂園、FUK COFFEE、福岡塔、還車",
+        summary: "藥院出發 → 櫛田神社 → 壹岐神社一之鳥居 → teamLab森林 → 暖暮拉麵 → 三麗鷗角色夢幻樂園 → FUK COFFEE → 福岡塔 → GRAND BASE 博多南 → 還車",
+        momTip: "👗 媽媽穿搭與體力建議：中午 11:52～16:25 的四個行程（teamLab、暖暮拉麵、三麗鷗夢幻樂園、FUK COFFEE 海景咖啡）全部都在同一棟「BOSS E・ZO FUKUOKA」大樓裡，搭電梯上下樓就能逛完吃飽喝下午茶，完全不用吹冷風走路！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=1-1-28+Shirogane+Chuo+Ward+Fukuoka&destination=1-18-10+Hakataekihigashi+Hakata+Ward+Fukuoka&waypoints=Kushida+Shrine|Iki+Shrine+Fukuoka|BOSS+E+ZO+FUKUOKA|Fukuoka+Tower|GRAND+BASE+Hakata+Minami",
+        dayReminder: "1. 中午四個點全在福岡巨蛋旁「BOSS E・ZO FUKUOKA」同棟大樓：5F teamLab → 3F 暖暮拉麵 → 7F 三麗鷗夢幻樂園 → 3F FUK COFFEE Seaside，動線超輕鬆！\n2. ⚠️ 18:49 先送媽媽跟所有行李到「GRAND BASE 佰舍博多南」入住，司機再開 9 分鐘去博多站筑紫口還車（營業提醒：20:00 打烊，預計 19:28 抵達非常準時）！",
+        stops: [
+          {
+            time: "08:00 ～ 09:00",
+            stay: "1 小時",
+            name: "YADO/Re 藥院（退房出發）",
+            category: "🏨 退房出發",
+            area: "九州-福岡",
+            address: "福岡市中央區白金1-1-28",
+            note: "09:00 退房，開車 12 分鐘前往博多總鎮守櫛田神社。",
+            reminder: "退房前檢查隨身物品。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=1-1-28+Shirogane+Chuo+Ward+Fukuoka",
+            officialUrl: "https://www.google.com/search?q=YADO%2FRe+%E8%96%AC%E9%99%A2",
+            officialLabel: "🌐 飯店資訊",
+            nextTransport: "🚗 開車 約 12 分鐘"
+          },
+          {
+            time: "09:12 ～ 10:12",
+            stay: "停留 1 小時",
+            name: "博多總鎮守 櫛田神社",
+            category: "⛩️ 千年山笠神社",
+            area: "九州-福岡",
+            ticketBadge: "🎫 免費參拜",
+            address: "福岡縣福岡市博多區上川端町1-41",
+            note: "建於西元 757 年的博多總鎮守，常年展示高達 13 公尺、華麗壯觀的「博多祇園山笠」巨型神轎。",
+            reminder: "神社設有參拜者專用停車場，平地無階梯。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=櫛田神社+福岡博多",
+            officialUrl: "https://yokanavi.com/zh-tw/spot/26906/",
+            officialLabel: "🌐 福岡觀光局中文介紹",
+            nextTransport: "🚗 開車 約 23 分鐘"
+          },
+          {
+            time: "10:35 ～ 11:35",
+            stay: "停留 1 小時",
+            name: "壹岐神社 一之鳥居 (壱岐神社・生之松原海岸森林)",
+            category: "⛩️ 海濱松林秘境鳥居",
+            area: "九州-福岡",
+            ticketBadge: "🎫 免費參拜",
+            address: "福岡縣福岡市西區生之松原22",
+            note: "緊鄰博多灣「生之松原」海岸松林的靜謐神社，穿過鳥居就能望見湛藍大海與沙灘，海風徐徐非常療癒。",
+            reminder: "海岸松林步道完全平坦，是福岡在地人私房的海景散步點。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=壱岐神社+一の鳥居+福岡市西区生の松原",
+            officialUrl: "https://yokanavi.com/zh-tw/",
+            officialLabel: "🌐 福岡觀光資訊",
+            nextTransport: "🚗 開車 約 17 分鐘"
+          },
+          {
+            time: "11:52 ～ 13:22",
+            stay: "停留 1 小時 30 分",
+            name: "teamLab 森林 福岡 (BOSS E・ZO FUKUOKA 5F)",
+            category: "✨ 沉浸式光影美術館",
+            area: "九州-福岡",
+            ticketBadge: "🎫 門票：¥2,400/人 (4人約 NT$ 2,064)",
+            address: "福岡縣福岡市中央區地行濱2丁目2-6 5F BOSS E・ZO FUKUOKA",
+            note: "由「捕捉並收集的森林」與「運動森林」組成的奇幻數位光影美術館，伸手觸摸牆面就會綻放四季花朵與動物光影。",
+            reminder: "⚠️ 請穿平底鞋入場；逛完直接搭電梯下 3 樓吃暖暮拉麵！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=チームラボフォレスト福岡+BOSS+E・ZO+FUKUOKA",
+            officialUrl: "https://www.teamlab.art/zh-hant/e/forest/",
+            officialLabel: "🌐 teamLab 福岡繁中官網",
+            nextTransport: "🚶 同棟大樓電梯 約 1 分鐘"
+          },
+          {
+            time: "13:23 ～ 14:23",
+            stay: "停留 1 小時",
+            name: "豚骨拉麵 暖暮 × 拉麵酒場 暖暮 (BOSS E・ZO 3F The FOODHALL)",
+            category: "🍜 九州第一名豚骨拉麵",
+            area: "九州-福岡",
+            address: "福岡縣福岡市中央區地行濱2丁目2-6 3F",
+            note: "曾獲選九州拉麵總選舉第一名的「暖暮拉麵」！就在同一棟大樓 3 樓美食街，濃郁不膩的豚骨湯頭配一口煎餃超美味。",
+            reminder: "在室內吹暖氣吃拉麵，不用在寒風中排隊！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=ラーメン暖暮+BOSS+E・ZO+FUKUOKA",
+            officialUrl: "https://e-zofukuoka.com/tw/foodhall/",
+            officialLabel: "🌐 BOSS E・ZO 餐廳指南",
+            nextTransport: "🚶 同棟大樓電梯 約 1 分鐘"
+          },
+          {
+            time: "14:24 ～ 15:24",
+            stay: "停留 1 小時",
+            name: "三麗鷗角色夢幻樂園 (Sanrio Characters Dream!ng Park・7F)",
+            category: "🎀 免費入場夢幻拍照區",
+            area: "九州-福岡",
+            ticketBadge: "🎫 免費入場 (互動遊戲 ¥500/項)",
+            address: "福岡縣福岡市中央區地行濱2丁目2-6 BOSS E・ZO FUKUOKA 7F",
+            note: "全日本首座常設型三麗鷗夢幻互動樂園！入場完全免費，有超大型 Hello Kitty、大耳狗、美樂蒂、酷洛米夢幻打卡牆與限定周邊商品店。",
+            reminder: "入場免費參觀拍照，若想玩數位互動遊戲或拍貼機再單獨購買代幣即可。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Sanrio+characters+Dream!ng+Park+Fukuoka",
+            officialUrl: "https://e-zofukuoka.com/tw/dreamingpark/",
+            officialLabel: "🌐 三麗鷗夢幻樂園繁中官網",
+            nextTransport: "🚶 同棟大樓電梯 約 1 分鐘"
+          },
+          {
+            time: "15:25 ～ 16:25",
+            stay: "停留 1 小時",
+            name: "FUK COFFEE® Seaside (BOSS E・ZO 3F)",
+            category: "☕ 福岡最潮海景咖啡布丁",
+            area: "九州-福岡",
+            address: "福岡縣福岡市中央區地行濱2-2-6 3F BOSS E・ZO FUKUOKA",
+            note: "福岡超人氣航空主題咖啡廳的海景分店！必點招牌「昭和風硬布丁佐冰淇淋」與登機證拉花拿鐵，讓媽媽坐著喝下午茶休息。",
+            reminder: "喝完下午茶後開車 6 分鐘前往福岡塔看夕陽與夜景！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=FUK+COFFEE+Seaside+Fukuoka",
+            officialUrl: "https://fuk-coffee.com/",
+            officialLabel: "🌐 FUK COFFEE 官方網站",
+            nextTransport: "🚗 開車 約 6 分鐘"
+          },
+          {
+            time: "16:31 ～ 18:31",
+            stay: "停留 2 小時",
+            name: "福岡塔 (Fukuoka Tower)",
+            category: "🗼 百道濱夕陽與夜景",
+            area: "九州-福岡",
+            ticketBadge: "🎫 展望台：¥800/人 (4人約 NT$ 688)",
+            address: "〒814-0001 福岡縣福岡市早良區百道濱2丁目3-26",
+            note: "日本最高海濱塔（高 234 公尺），16:31 抵達可先去福岡塔北側的「百道濱海灘 & Marizon 海上教堂」拍夕陽，再登塔看 360 度璀璨夜景，塔內也有高空景觀餐廳。",
+            reminder: "一次收集白日海景、黃昏落日與百萬夜景！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=福岡タワー+Fukuoka+Tower",
+            officialUrl: "https://www.fukuokatower.co.jp/tw/",
+            officialLabel: "🌐 福岡塔繁中官方網站",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/526459?cid=21657",
+            bookingLabel: "🎫 福岡觀光參考",
+            nextTransport: "🚗 開車 約 18 分鐘"
+          },
+          {
+            time: "18:49 ～ 19:19",
+            stay: "先下行李＆入住 (第6晚)",
+            name: "格蘭德貝斯博多南 (GRAND BASE 佰舍博多南)",
+            category: "🏨 已確認大空間住宿",
+            area: "九州-福岡",
+            ticketBadge: "🏨 已付 NT$ 4,239 (3張雙人床)",
+            address: "Hakataekiminami 2-19-21, 博多區, 812-0016 福岡市",
+            note: "【PDF訂單已確認】豪華，轉角三人帶浴室，城景・1間（3張雙人床，可住6位成人，34㎡大空間，無餐點）｜已於 1/21 付款 TWD 4,239｜單號：1616334496055164｜PIN碼：1107",
+            reminder: "✓ 新訂單已改為線上付清 TWD 4,239（僅需於現場依人數繳納福岡住宿稅 200円/人）！先讓媽媽與所有戰利品行李在此下車進房，司機再開 9 分鐘去還車。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=GRAND+BASE+博多南+福岡市博多区博多駅南2-19-21",
+            officialUrl: "https://grand-base.jp/hotel/gb-hakataminami/",
+            officialLabel: "🌐 GRAND BASE 博多南官網",
+            bookingUrl: "https://www.agoda.com/zh-tw/partners/partnersearch.aspx?cid=1922493&hid=72218242&currency=TWD",
+            bookingLabel: "📄 查看去趣訂房連結",
+            nextTransport: "🚗 開車 約 9 分鐘"
+          },
+          {
+            time: "19:28 ～ 20:00",
+            stay: "歸還 ALPHARD",
+            name: "Avis / Budget Car Rental (駅レンタカー博多站筑紫口店・加滿油還車)",
+            category: "🚐 租車歸還",
+            area: "九州-福岡",
+            address: "1 Chome-18-10 Hakataekihigashi, Hakata Ward, Fukuoka, 812-0013",
+            note: "加滿油歸還新款 ALPHARD 雪胎車並結算 ETC 過路費，圓滿結束九州自駕行程！",
+            reminder: "⚠️ 【營業提醒：20:00 打烊】！19:28 抵達時間剛好，還完車可在博多站筑紫口/博多一番街吃牛腸鍋或水炊鍋晚餐。",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=1-18-10+Hakataekihigashi+Hakata+Ward+Fukuoka",
+            officialUrl: "https://www.budgetrentacar.co.jp/zh/",
+            officialLabel: "🌐 租車店資訊"
+          }
+        ]
+      },
+      {
+        day: 7,
+        date: "2027/01/27 (週三)",
+        title: "12分鐘輕鬆直達福岡機場・平安返台",
+        summary: "GRAND BASE 佰舍博多南 (09:00退房) → 福岡機場國際線航廈 (09:12抵達) → 搭機返台",
+        momTip: "👗 媽媽穿搭與體力建議：最後一天從博多南飯店搭計程車只要 12 分鐘就直達福岡機場國際線，逛全新擴建的免稅店買明太子與福砂屋長崎蛋糕，輕鬆賦歸！",
+        routeMapUrl: "https://www.google.com/maps/dir/?api=1&origin=GRAND+BASE+Hakata+Minami&destination=Fukuoka+Airport+International+Terminal",
+        dayReminder: "1. 09:00 退房搭計程車 12 分鐘即達福岡機場國際線航廈。\n2. ⚠️ 小提醒：去趣行程濃縮為 7 天（1/21～1/27），而 PDF 第 2 頁機票截圖回程日期顯示為 1/28（四）12:15-13:50，請確認是否已將回程機票改為 1/27，或 1/27 晚間在福岡多住 1 晚喔！",
+        stops: [
+          {
+            time: "08:00 ～ 09:00",
+            stay: "1 小時",
+            name: "格蘭德貝斯博多南 (GRAND BASE 佰舍博多南・退房)",
+            category: "🏨 退房出發",
+            area: "九州-福岡",
+            address: "福岡縣福岡市博多區博多站南2丁目19-21",
+            note: "10:00 前退房，09:00 搭計程車出發前往福岡機場。",
+            reminder: "4 人加行李建議叫計程車（Uber / GO App）從飯店門口直達機場，車程僅 12 分鐘！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=GRAND+BASE+博多南",
+            officialUrl: "https://grand-base.jp/hotel/gb-hakataminami/",
+            officialLabel: "🌐 飯店官方網站",
+            nextTransport: "🚕 計程車直達 約 12 分鐘"
+          },
+          {
+            time: "09:12 抵達",
+            stay: "報到＆免稅店採買",
+            name: "福岡機場國際線航廈",
+            category: "✈️ 平安賦歸",
+            area: "九州-福岡",
+            address: "福岡縣福岡市博多區下臼井778-1",
+            note: "辦理登機報到與行李託運（每人享 2×23kg 託運行李額度），出境後在福岡機場免稅店買齊博多通饅頭、明太子與長崎蛋糕！",
+            reminder: "滿載美好回憶平安返台！",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=福岡空港国際線ターミナル",
+            officialUrl: "https://www.fukuoka-airport.jp/tw/",
+            officialLabel: "🌐 福岡機場繁中官網",
+            bookingUrl: "https://www.kkday.com/zh-tw/product/285068?cid=21657",
+            bookingLabel: "🚌 機場巴士參考 (NT$83)"
+          }
+        ]
+      }
+    ];
+
+    // =====================================================
+    // 狀態管理與渲染邏輯
+    // =====================================================
+    let currentOkinawaDay = 1;
+    let currentKyushuDay = 1;
+    let showAllOkinawa = false;
+    let showAllKyushu = false;
+
+    function switchMainTab(tab) {
+      ['compare', 'okinawa', 'kyushu'].forEach(v => {
+        const el = document.getElementById('view-' + v);
+        const btn = document.getElementById('tabBtn-' + v);
+        if (v === tab) {
+          el.classList.remove('hidden');
+          btn.classList.add('nav-pill-active-' + v);
+        } else {
+          el.classList.add('hidden');
+          btn.classList.remove('nav-pill-active-' + v);
+        }
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function setPriceDisplayMode(mode) {
+      const btnTotal = document.getElementById('priceMode-total');
+      const btnPerson = document.getElementById('priceMode-person');
+
+      if (mode === 'person') {
+        btnPerson.className = "px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-[#2C2523] text-white shadow-sm transition cursor-pointer";
+        btnTotal.className = "px-4 py-2 rounded-xl font-bold text-xs sm:text-sm text-[#5C534E] hover:text-[#2C2523] transition cursor-pointer";
+
+        document.getElementById('okinawaBadgeMode').textContent = "每人平均費用";
+        document.getElementById('okinawaMainPrice').textContent = "NT$ 39,383 / 人";
+        document.getElementById('okinawaSubPrice').textContent = "👨‍👩‍👦‍👦 4人全預算總計：NT$ 157,532";
+        document.getElementById('okinawaBreakdownFlight').textContent = "NT$ 19,888 / 人";
+        document.getElementById('okinawaBreakdownHotel').textContent = "NT$ 10,832 / 人";
+        document.getElementById('okinawaBreakdownCar').textContent = "NT$ 4,891 / 人";
+        document.getElementById('okinawaBreakdownTicket').textContent = "NT$ 3,772 / 人";
+
+        document.getElementById('kyushuBadgeMode').textContent = "每人平均費用";
+        document.getElementById('kyushuMainPrice').textContent = "NT$ 50,887 / 人";
+        document.getElementById('kyushuSubPrice').textContent = "👨‍👩‍👦‍👦 4人全預算總計：NT$ 203,549";
+        document.getElementById('kyushuBreakdownFlight').textContent = "NT$ 25,021 / 人";
+        document.getElementById('kyushuBreakdownHotel').textContent = "NT$ 12,028 / 人";
+        document.getElementById('kyushuBreakdownCar').textContent = "NT$ 10,568 / 人";
+        document.getElementById('kyushuBreakdownTicket').textContent = "NT$ 3,271 / 人";
+
+        document.getElementById('diffMainText').textContent = "每人省 NT$ 11,504";
+        document.getElementById('diffSubText').textContent = "👨‍👩‍👦‍👦 4人總差額：NT$ 46,017";
+      } else {
+        btnTotal.className = "px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-[#2C2523] text-white shadow-sm transition cursor-pointer";
+        btnPerson.className = "px-4 py-2 rounded-xl font-bold text-xs sm:text-sm text-[#5C534E] hover:text-[#2C2523] transition cursor-pointer";
+
+        document.getElementById('okinawaBadgeMode').textContent = "4位大人總計";
+        document.getElementById('okinawaMainPrice').textContent = "NT$ 157,532";
+        document.getElementById('okinawaSubPrice').textContent = "👤 每人平均：NT$ 39,383 / 人";
+        document.getElementById('okinawaBreakdownFlight').textContent = "NT$ 79,552";
+        document.getElementById('okinawaBreakdownHotel').textContent = "NT$ 43,329";
+        document.getElementById('okinawaBreakdownCar').textContent = "NT$ 19,565";
+        document.getElementById('okinawaBreakdownTicket').textContent = "NT$ 15,086";
+
+        document.getElementById('kyushuBadgeMode').textContent = "4位大人總計";
+        document.getElementById('kyushuMainPrice').textContent = "NT$ 203,549";
+        document.getElementById('kyushuSubPrice').textContent = "👤 每人平均：NT$ 50,887 / 人";
+        document.getElementById('kyushuBreakdownFlight').textContent = "NT$ 100,084";
+        document.getElementById('kyushuBreakdownHotel').textContent = "NT$ 48,111";
+        document.getElementById('kyushuBreakdownCar').textContent = "NT$ 42,272";
+        document.getElementById('kyushuBreakdownTicket').textContent = "NT$ 13,082";
+
+        document.getElementById('diffMainText').textContent = "沖繩省 NT$ 46,017";
+        document.getElementById('diffSubText').textContent = "👤 平均每人省下：NT$ 11,504 / 人";
+      }
+    }
+
+    function toggleAllDaysMode(tripType) {
+      if (tripType === 'okinawa') {
+        showAllOkinawa = !showAllOkinawa;
+        document.getElementById('okinawaViewToggleBtn').textContent = showAllOkinawa ? '📑 切換：單日分頁檢視' : '📖 切換：展開全部 8 天連續看';
+        document.getElementById('okinawa-day-tabs').classList.toggle('hidden', showAllOkinawa);
+      } else {
+        showAllKyushu = !showAllKyushu;
+        document.getElementById('kyushuViewToggleBtn').textContent = showAllKyushu ? '📑 切換：單日分頁檢視' : '📖 切換：展開全部 7 天連續看';
+        document.getElementById('kyushu-day-tabs').classList.toggle('hidden', showAllKyushu);
+      }
+      renderDayContent(tripType);
+    }
+
+    function renderDayTabs(tripType) {
+      const daysData = tripType === 'okinawa' ? okinawaDays : kyushuDays;
+      const currentDay = tripType === 'okinawa' ? currentOkinawaDay : currentKyushuDay;
+      const container = document.getElementById(tripType + '-day-tabs');
+      const activeClass = tripType === 'okinawa' ? 'day-pill-active-okinawa' : 'day-pill-active-kyushu';
+
+      container.innerHTML = daysData.map(d => {
+        const isActive = d.day === currentDay;
+        const shortDate = d.date.replace('2027/', '');
+        return `
+          <button onclick="selectDay('${tripType}', ${d.day})"
+            class="${isActive ? activeClass : 'bg-white text-[#3D3531] hover:bg-[#F3EDE2] border-[#DED6C8]'} btn-lift border rounded-2xl p-3 text-center cursor-pointer flex flex-col items-center justify-center">
+            <span class="font-extrabold text-base">Day ${d.day}</span>
+            <span class="text-xs opacity-90 mt-0.5">${shortDate}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function buildSingleDayHtml(tripType, dayObj, showNavFooter) {
+      const isOkinawa = tripType === 'okinawa';
+      const maxDays = isOkinawa ? 8 : 7;
+      const badgeBg = isOkinawa ? 'bg-[#E0F2FE] text-[#0369A1] border-[#BAE6FD]' : 'bg-[#FFEDD5] text-[#9A3412] border-[#FED7AA]';
+      const numBg = isOkinawa ? 'bg-[#0077B6]' : 'bg-[#C85A32]';
+      const officialBtnBg = isOkinawa ? 'bg-[#0077B6] hover:bg-[#023E8A]' : 'bg-[#C85A32] hover:bg-[#9E3E1C]';
+      const headerBorder = isOkinawa ? 'border-l-8 border-l-[#0077B6]' : 'border-l-8 border-l-[#C85A32]';
+
+      const stopsHtml = dayObj.stops.map((stop, idx) => {
+        const safeTitle = stop.name.replace(/'/g, "\\'");
+        const safeReminder = (stop.reminder || '今日無特別時間限制，祝您旅途愉快！').replace(/'/g, "\\'").replace(/\n/g, "\\n");
+
+        return `
+          <div class="warm-card p-5 sm:p-6 space-y-4 transition hover:border-stone-300">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div class="space-y-1.5">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-7 h-7 rounded-full ${numBg} text-white font-extrabold text-sm shadow-sm">${idx + 1}</span>
+                  <span class="px-3 py-0.5 rounded-full ${badgeBg} font-extrabold text-xs sm:text-sm border">🕒 ${stop.time}</span>
+                  <span class="px-3 py-0.5 rounded-full bg-[#F3EDE2] text-[#5C534E] font-bold text-xs">${stop.stay}</span>
+                  <span class="px-3 py-0.5 rounded-full bg-[#F3EDE2] text-[#5C534E] font-bold text-xs">${stop.category}｜${stop.area}</span>
+                  ${stop.ticketBadge ? `<span class="px-3 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 font-extrabold text-xs">${stop.ticketBadge}</span>` : ''}
+                </div>
+                <h4 class="text-lg sm:text-xl font-extrabold text-[#2C2523] pt-1">${stop.name}</h4>
+                <p class="text-xs sm:text-sm text-[#6E655F]">📍 地址：${stop.address}</p>
+              </div>
+            </div>
+
+            <!-- 溫馨介紹框 -->
+            <div class="bg-[#FAF6F0] rounded-2xl p-4 text-sm sm:text-base text-[#3D3531] border border-[#EAE3D9] leading-relaxed">
+              ${stop.note}
+            </div>
+
+            <!-- 貼心提醒框 -->
+            ${stop.reminder ? `
+              <div class="bg-[#FFF9E6] border border-[#F5E0A3] rounded-2xl px-4 py-3 text-xs sm:text-sm text-[#664D03] flex items-start gap-2.5">
+                <span class="text-base leading-none mt-0.5">💡</span>
+                <div class="leading-relaxed"><strong>貼心提醒：</strong>${stop.reminder}</div>
+              </div>
+            ` : ''}
+
+            <!-- 四大操作按鈕區 (Google地圖 / 官方網站 / 提醒按鈕 / 預訂連結) -->
+            <div class="pt-1 flex flex-wrap items-center gap-2.5">
+              <a href="${stop.mapUrl}" target="_blank" rel="noopener noreferrer"
+                class="btn-lift inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-bold text-xs sm:text-sm shadow-sm">
+                <span>🗺️</span>
+                <span>Google 地圖導航</span>
+              </a>
+
+              <a href="${stop.officialUrl}" target="_blank" rel="noopener noreferrer"
+                class="btn-lift inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl ${officialBtnBg} text-white font-bold text-xs sm:text-sm shadow-sm">
+                <span>${stop.officialLabel || '🌐 官方網站 / 介紹'}</span>
+              </a>
+
+              <button onclick="openReminderModal('${safeTitle}・貼心提醒', '${safeReminder}')"
+                class="btn-lift inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#D97706] hover:bg-[#B45309] text-white font-bold text-xs sm:text-sm shadow-sm cursor-pointer">
+                <span>🔔</span>
+                <span>點我看提醒</span>
+              </button>
+
+              ${stop.bookingUrl ? `
+                <a href="${stop.bookingUrl}" target="_blank" rel="noopener noreferrer"
+                  class="btn-lift inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#6D597A] hover:bg-[#51405C] text-white font-bold text-xs sm:text-sm shadow-sm">
+                  <span>${stop.bookingLabel || '🎫 預訂 / 優惠連結'}</span>
+                </a>
+              ` : ''}
+            </div>
+          </div>
+
+          ${stop.nextTransport ? `
+            <div class="flex items-center gap-3 pl-7 py-1 text-xs sm:text-sm font-bold text-[#6E655F]">
+              <div class="w-0.5 h-7 timeline-line ml-2"></div>
+              <span class="bg-[#EAE3D9]/80 text-[#3D3531] px-3.5 py-1 rounded-full border border-[#DED6C8]">↓ 下一段交通：${stop.nextTransport}</span>
+            </div>
+          ` : ''}
+        `;
+      }).join('');
+
+      const safeDayTitle = `Day ${dayObj.day} (${dayObj.date}) 重點提醒`.replace(/'/g, "\\'");
+      const safeDayReminder = dayObj.dayReminder.replace(/'/g, "\\'").replace(/\n/g, "\\n");
+
+      return `
+        <div class="space-y-4">
+          <!-- 當日總覽標題卡 -->
+          <div class="warm-card ${headerBorder} p-6 space-y-4">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+              <div class="space-y-1">
+                <div class="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold text-[#6E655F]">
+                  <span>📅 Day ${dayObj.day}</span>
+                  <span>•</span>
+                  <span>${dayObj.date}</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-extrabold text-[#2C2523]">${dayObj.title}</h3>
+                <p class="text-sm text-[#5C534E]">📌 路線：${dayObj.summary}</p>
+              </div>
+              <div class="flex flex-wrap gap-2.5 shrink-0">
+                <a href="${dayObj.routeMapUrl}" target="_blank" rel="noopener noreferrer"
+                  class="btn-lift inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#2D6A4F] hover:bg-[#1B4332] text-white font-bold text-sm shadow-sm">
+                  <span>🗺️</span>
+                  <span>開啟當日路線 Google 地圖</span>
+                </a>
+                <button onclick="openReminderModal('${safeDayTitle}', '${safeDayReminder}')"
+                  class="btn-lift inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#D97706] hover:bg-[#B45309] text-white font-bold text-sm shadow-sm cursor-pointer">
+                  <span>🔔</span>
+                  <span>當日重點提醒按鈕</span>
+                </button>
+              </div>
+            </div>
+
+            ${dayObj.momTip ? `
+              <div class="bg-[#F6F3EC] border border-[#E5DEC9] rounded-2xl p-3.5 text-sm text-[#3D3531]">
+                ${dayObj.momTip}
+              </div>
+            ` : ''}
+          </div>
+
+          <!-- 當日各站點時間軸 -->
+          <div class="space-y-2">
+            ${stopsHtml}
+          </div>
+
+          ${showNavFooter ? `
+            <div class="flex items-center justify-between pt-3">
+              <button onclick="selectDay('${tripType}', ${Math.max(1, dayObj.day - 1)})"
+                ${dayObj.day === 1 ? 'disabled' : ''}
+                class="${dayObj.day === 1 ? 'opacity-40 cursor-not-allowed' : 'hover:bg-[#EAE3D9] cursor-pointer btn-lift'} px-5 py-3 rounded-2xl bg-white text-[#2C2523] font-bold text-sm border border-[#DED6C8] shadow-sm">
+                ← 上一天 (Day ${Math.max(1, dayObj.day - 1)})
+              </button>
+              <span class="text-sm font-extrabold text-[#6E655F]">第 ${dayObj.day} / ${maxDays} 天</span>
+              <button onclick="selectDay('${tripType}', ${Math.min(maxDays, dayObj.day + 1)})"
+                ${dayObj.day === maxDays ? 'disabled' : ''}
+                class="${dayObj.day === maxDays ? 'opacity-40 cursor-not-allowed' : 'hover:bg-[#EAE3D9] cursor-pointer btn-lift'} px-5 py-3 rounded-2xl bg-white text-[#2C2523] font-bold text-sm border border-[#DED6C8] shadow-sm">
+                下一天 (Day ${Math.min(maxDays, dayObj.day + 1)}) →
+              </button>
+            </div>
+          ` : ''}
+        </div>
+      `;
+    }
+
+    function renderDayContent(tripType) {
+      const daysData = tripType === 'okinawa' ? okinawaDays : kyushuDays;
+      const showAll = tripType === 'okinawa' ? showAllOkinawa : showAllKyushu;
+      const currentDay = tripType === 'okinawa' ? currentOkinawaDay : currentKyushuDay;
+      const container = document.getElementById(tripType + '-day-content');
+
+      if (showAll) {
+        container.innerHTML = daysData.map(d => buildSingleDayHtml(tripType, d, false)).join('<hr class="my-8 border-t-2 border-dashed border-[#D6CFC5]" />');
+      } else {
+        const dayObj = daysData.find(d => d.day === currentDay);
+        container.innerHTML = buildSingleDayHtml(tripType, dayObj, true);
+      }
+    }
+
+    function selectDay(tripType, dayNum) {
+      if (tripType === 'okinawa') {
+        currentOkinawaDay = dayNum;
+      } else {
+        currentKyushuDay = dayNum;
+      }
+      renderDayTabs(tripType);
+      renderDayContent(tripType);
+    }
+
+    function openReminderModal(title, bodyText) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalBody').textContent = bodyText;
+      document.getElementById('reminderModal').classList.remove('hidden');
+    }
+
+    function closeReminderModal() {
+      document.getElementById('reminderModal').classList.add('hidden');
+    }
+
+    function openAllRemindersModal() {
+      const summary = [
+        "【💰 兩方案全預算總計 (4位大人：機票＋住宿＋ALPHARD租車＋門票預估)】",
+        "• 沖繩冬日游 (8天7夜)：機票 NT$ 79,552 ＋ 7晚住宿 NT$ 43,329 ＋ ALPHARD租車 NT$ 19,565 ＋ 門票預估 NT$ 15,086 ＝ 總計 NT$ 157,532（每人 NT$ 39,383）",
+        "• 九州溫泉之旅 (7天6夜)：機票 NT$ 100,084 ＋ 6晚住宿 NT$ 48,111 ＋ 新款ALPHARD雪胎租車 NT$ 42,272 ＋ 門票預估 NT$ 13,082 ＝ 總計 NT$ 203,549（每人 NT$ 50,887）",
+        "",
+        "【🌺 沖繩方案・最新提醒】",
+        "1. 第 1 晚已更新為國際通松尾「那霸蒙特利拉蘇瑞飯店（NT$ 5,828）」，走路 6 分鐘即可到泉崎「BGA 租車行」取 TOYOTA ALPHARD（¥91,000 含全險與 ETC 吃到飽）。",
+        "2. 1/27 晚間 BGA 租車行於 19:00 打烊，18:04 到櫻花酒店放完行李後請準時於 18:41 前往還車。",
+        "",
+        "【♨️ 九州方案・最新提醒】",
+        "1. 租車單提醒：九州 PDF 第 1 頁新款 ALPHARD 雪胎車（¥196,614）截圖顯示於步驟 05「預約尚未完成」，請確認已完成最後送出步驟。",
+        "2. 營業時間注意：Day 2 別府「天丼豐常本店」晚餐為 17:00 開門（16:30 抵達可先停車抽號碼牌）；Day 4 熊本「蜂樂饅頭」約 18:00-18:30 售完、「Love Love 精品店」20:00 打烊（建議先逛精品再吃晚餐）；Day 6 還車店 20:00 打烊。",
+        "3. 回程日期核對：去趣行程濃縮為 7 天（1/27 返台），而機票截圖回程仍為 1/28，請留意是否改機票或加訂 1/27 住宿。"
+      ].join("\n");
+      openReminderModal("🔔 給媽媽與家人的行前重點提醒總覽", summary);
+    }
+
+    function toggleFontSize() {
+      const htmlEl = document.documentElement;
+      const isLarge = htmlEl.classList.toggle('large-font');
+      const btnText = document.getElementById('fontToggleText');
+      btnText.textContent = isLarge ? '恢復標準字體' : '放大字體 (更舒適)';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderDayTabs('okinawa');
+      renderDayContent('okinawa');
+      renderDayTabs('kyushu');
+      renderDayContent('kyushu');
+    });
+  </script>
+</body>
+</html>
